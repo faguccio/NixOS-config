@@ -34,14 +34,53 @@ in {
             natural_scroll = "enabled";
             scroll_factor = "0.3";
 
-            accel_profile = "adaptive"; # or flat
-            pointer_accel = "0.1";
+            # accel_profile = "adaptive"; # or flat
+            # pointer_accel = "0.1";
           };
 
           # keebs config
           "type:keyboard" = {
             repeat_rate = "60";
             repeat_delay = "300";
+          };
+        };
+
+        colors = {
+          background = background;
+          focused = {
+            border = regular4;
+            background = regular4;
+            text = foreground;
+            indicator = regular4;
+            childBorder = regular4;
+          };
+          focusedInactive = {
+            border = regular0;
+            background = regular0;
+            text = foreground;
+            indicator = regular0;
+            childBorder = regular0;
+          };
+          unfocused = {
+            border = regular0;
+            background = regular0;
+            text = foreground;
+            indicator = regular0;
+            childBorder = regular0;
+          };
+          urgent = {
+            border = regular1;
+            background = regular1;
+            text = foreground;
+            indicator = regular1;
+            childBorder = regular1;
+          };
+          placeholder = {
+            border = regular4;
+            background = regular4;
+            text = foreground;
+            indicator = regular4;
+            childBorder = regular4;
           };
         };
       };
