@@ -2,7 +2,7 @@
   imports = [
     <home-manager/nixos>
     ./programs.nix
-    ./sway-conf.nix
+    ./window-manager
   ];
 
   home-manager.users.f4g4 = {pkgs, ...}: {
