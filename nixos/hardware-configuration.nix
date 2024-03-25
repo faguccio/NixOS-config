@@ -44,5 +44,4 @@
   # Adedded by me (hence very suspicious)
   hardware.opengl.enable = true;
   hardware.opengl.driSupport = true;
-
 }

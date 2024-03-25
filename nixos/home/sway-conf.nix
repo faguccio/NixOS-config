@@ -1,37 +1,34 @@
-{pkgs, lib, ...}:
+{
+  pkgs,
+  lib,
+  ...
+}:
 with lib;
-with pkgs;
-let 
-  foreground = "#C6D0F5";   # text
-  background = "#303446";   # base
-  regular0   = "#51576D";   # surface 1
-  regular1   = "#E78284";   # red
-  regular4   = "#8CAAEE";   # blue
-
+with pkgs; let
+  foreground = "#C6D0F5"; # text
+  background = "#303446"; # base
+  regular0 = "#51576D"; # surface 1
+  regular1 = "#E78284"; # red
+  regular4 = "#8CAAEE"; # blue
 in {
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
-    enable = true;
-    config = rec {
-      modifier = "Mod4";
-      terminal = "foot"; 
-      startup = [
-      ];
+      enable = true;
+      config = rec {
+        modifier = "Mod4";
+        terminal = "foot";
+        startup = [
+        ];
 
-      bars = [{
-                command = "${waybar}/bin/waybar";
-              }];
-
-     
-
+        bars = [
+          {
+            command = "${waybar}/bin/waybar";
+          }
+        ];
+      };
+    };
   };
-  };
-};}
-
-
-
-
-
+}
 # {
 #   config,
 #   pkgs,
@@ -48,14 +45,12 @@ in {
 #     name = "dbus-sway-environment";
 #     destination = "/bin/dbus-sway-environment";
 #     executable = true;
-
 #     text = ''
 #       dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 #       systemctl --user stop pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr
 #       systemctl --user start pipewire pipewire-media-session xdg-desktop-portal xdg-desktop-portal-wlr
 #     '';
 #   };
-
 #   # currently, there is some friction between sway and gtk:
 #   # https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland
 #   # the suggested way to set gtk settings is with gsettings
@@ -94,13 +89,11 @@ in {
 #     mako # notification system developed by swaywm maintainer
 #     wdisplays # tool to configure displays
 #   ];
-
 #   services.pipewire = {
 #     enable = true;
 #     alsa.enable = true;
 #     pulse.enable = true;
 #   };
-
 #   # xdg-desktop-portal works by exposing a series of D-Bus interfaces
 #   # known as portals under a well-known name
 #   # (org.freedesktop.portal.Desktop) and object path
@@ -114,14 +107,13 @@ in {
 #     # gtk portal needed to make gtk apps happy
 #     extraPortals = [pkgs.xdg-desktop-portal-gtk];
 #   };
-
 #   # Enable the gnome-keyrig secrets vault.
 #   # Will be exposed through DBus to programs willing to store secrets.
 #   services.gnome.gnome-keyring.enable = true;
-
 #   # enable sway window manager
 #   programs.sway = {
 #     enable = true;
 #     wrapperFeatures.gtk = true;
 #   };
 # }
+
