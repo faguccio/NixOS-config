@@ -10,6 +10,8 @@ with pkgs; let
   regular0 = "#51576D"; # surface 1
   regular1 = "#E78284"; # red
   regular4 = "#8CAAEE"; # blue
+
+  modifier = "Mod4";
 in {
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
@@ -82,6 +84,84 @@ in {
             indicator = regular4;
             childBorder = regular4;
           };
+        };
+
+        keybindings = mkOptionDefault {
+          # # rofi: menu
+          # "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
+          # # rofi: clipboard manager
+          # "${modifier}+c" = "exec ${cliphist}/bin/cliphist list | ${rofi}/bin/rofi -dmenu | ${cliphist}/bin/cliphist decode | ${wl-clipboard}/bin/wl-copy ";
+          # # rofi: bluetooth
+          # "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
+          # # rofi: password store
+          # "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
+          # # pick color
+          # "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
+          # # mirror screen
+          # "${modifier}+o" = "exec ${wl-mirror}/bin/wl-present mirror";
+
+          # # modes
+          # "${modifier}+g" = "mode recording";
+          # "${modifier}+p" = "mode printscreen";
+          # "${modifier}+q" = "mode browser";
+          # "${modifier}+r" = "mode resize";
+          # "${modifier}+u" = "mode audio";
+          # "${modifier}+x" = "mode session";
+
+          # "${modifier}+period" = "workspace next";
+          # "${modifier}+comma" = "workspace prev";
+
+          # "${modifier}+1" = "workspace number 1";
+          # "${modifier}+2" = "workspace number 2";
+          # "${modifier}+3" = "workspace number 3";
+          # "${modifier}+4" = "workspace number 4";
+          # "${modifier}+5" = "workspace number 5";
+          # "${modifier}+6" = "workspace number 6";
+          # "${modifier}+7" = "workspace number 7";
+          # "${modifier}+8" = "workspace number 8";
+          # "${modifier}+9" = "workspace number 9";
+
+          # "${modifier}+Shift+period" = "move container to workspace next; workspace next";
+          # "${modifier}+Shift+comma" = "move container to workspace prev; workspace prev";
+
+          # "${modifier}+Shift+1" = "move container to workspace number 1";
+          # "${modifier}+Shift+2" = "move container to workspace number 2";
+          # "${modifier}+Shift+3" = "move container to workspace number 3";
+          # "${modifier}+Shift+4" = "move container to workspace number 4";
+          # "${modifier}+Shift+5" = "move container to workspace number 5";
+          # "${modifier}+Shift+6" = "move container to workspace number 6";
+          # "${modifier}+Shift+7" = "move container to workspace number 7";
+          # "${modifier}+Shift+8" = "move container to workspace number 8";
+          # "${modifier}+Shift+9" = "move container to workspace number 9";
+
+          # "${modifier}+${left}" = "focus left";
+          # "${modifier}+${down}" = "focus down";
+          # "${modifier}+${up}" = "focus up";
+          # "${modifier}+${right}" = "focus right";
+
+          # "${modifier}+Ctrl+${left}" = "move workspace to output left";
+          # "${modifier}+Ctrl+${down}" = "move workspace to output down";
+          # "${modifier}+Ctrl+${up}" = "move workspace to output up";
+          # "${modifier}+Ctrl+${right}" = "move workspace to output right";
+
+          # "${modifier}+Shift+${left}" = "move left";
+          # "${modifier}+Shift+${down}" = "move down";
+          # "${modifier}+Shift+${up}" = "move up";
+          # "${modifier}+Shift+${right}" = "move right";
+
+          # audio control
+          "XF86AudioRaiseVolume" = "exec ${pamixer}/bin/pamixer --increase 2";
+          "XF86AudioLowerVolume" = "exec ${pamixer}/bin/pamixer --decrease 2";
+          "XF86AudioMute" = "exec ${pamixer}/bin/pamixer --toggle-mute";
+
+          # mic control
+          "${modifier}+XF86AudioRaiseVolume" = "exec ${pamixer}/bin/pamixer --default-source --increase 2";
+          "${modifier}+XF86AudioLowerVolume" = "exec ${pamixer}/bin/pamixer --default-source --decrease 2";
+          "${modifier}+XF86AudioMute" = "exec ${pamixer}/bin/pamixer --default-source -t";
+
+          # brightness
+          "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 2";
+          "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 2";
         };
       };
     };
