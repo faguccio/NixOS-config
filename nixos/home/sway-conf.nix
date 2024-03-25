@@ -26,6 +26,25 @@ in {
           }
         ];
       };
+      config = {
+        input = {
+          # trackpad config
+          "type:touchpad" = {
+            tap = "enabled";
+            natural_scroll = "enabled";
+            scroll_factor = "0.3";
+
+            accel_profile = "adaptive"; # or flat
+            pointer_accel = "0.1";
+          };
+
+          # keebs config
+          "type:keyboard" = {
+            repeat_rate = "60";
+            repeat_delay = "300";
+          };
+        };
+      };
     };
   };
 }
