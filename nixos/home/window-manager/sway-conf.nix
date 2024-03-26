@@ -16,6 +16,10 @@ in {
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
       enable = true;
+      extraConfig = ''
+        font pango:monospace 0
+      '';
+
       config = rec {
         modifier = "Mod4";
         terminal = "foot";
