@@ -157,8 +157,8 @@ in {
           # bindsym XF86AudioPrev         exec playerctl previous
           # bindsym XF86AudioNext         exec playerctl next
           # bindsym XF86AudioStop         exec playerctl stop
-          "XF86AudioRaiseVolume" = "exec pactl set-sink-volume 0 -2%";
-          "XF86AudioLowerVolume" = "exec pactl set-sink-volume 0 +2";
+          "XF86AudioRaiseVolume" = "exec pactl set-sink-volume 0 +2%";
+          "XF86AudioLowerVolume" = "exec pactl set-sink-volume 0 -2%";
           "XF86AudioMute" = "exec pactl set-sink-mute 0 toggle";
 
           # mic control
