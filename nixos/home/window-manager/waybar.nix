@@ -48,7 +48,6 @@ in {
           "backlight"
           "bluetooth"
           "network"
-          "tray"
           "clock"
         ];
         "keyboard-state" = {
