@@ -80,11 +80,17 @@
 
   # For sway
   security.polkit.enable = true;
-  programs.light.enable = true;
+
+  hardware.opengl.enable = true;
+  hardware.opengl.driSupport = true;
 
   environment.loginShellInit = ''
     [[ "$(tty)" == /dev/tty1 ]] && sway
   '';
+
+  sound.enable = true;
+  hardware.pulseaudio.enable = true;
+  programs.light.enable = true;
 
   # For garbage colection
   nix.gc = {

@@ -40,8 +40,4 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-
-  # Adedded by me (hence very suspicious)
-  hardware.opengl.enable = true;
-  hardware.opengl.driSupport = true;
 }

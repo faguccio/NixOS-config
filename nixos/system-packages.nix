@@ -11,9 +11,8 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
-    firefox
-    vscodium
     git
+
     alejandra
     neofetch
     htop
@@ -21,7 +20,12 @@
     waybar
     swaylock
     foot
-    pipewire
+    #pipewire
+    #pipewire-pulse
+    wl-clipboard
+
     telegram-desktop
+    firefox
+    vscodium
   ];
 }
