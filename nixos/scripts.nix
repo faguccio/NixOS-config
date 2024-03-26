@@ -3,9 +3,8 @@
     set -e
     pushd ~/mynix-conf/nixos/
 
-
     # Early return if no changes were detected (thanks @singiamtel!)
-    if $(pkgs.git) diff --quiet '*.nix'; then
+    if ${pkgs.git} diff --quiet '*.nix'; then
         echo "No changes detected, exiting."
         popd
         exit 0
@@ -15,7 +14,7 @@
       || ( alejandra . ; echo "formatting failed!" && exit 1)
 
     # Shows your changes
-    git diff -U0 '*.nix'
+    ${pkgs.git} diff -U0 '*.nix'
 
     echo "NixOS Rebuilding..."
 
@@ -26,7 +25,7 @@
     current=$(nixos-rebuild list-generations | grep current)
 
     # Commit all changes witih the generation metadata
-    git commit -am "$current"
+    ${pkgs.git} commit -am "$current"
 
     # Back to where you were
     popd
