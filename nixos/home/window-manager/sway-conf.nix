@@ -22,11 +22,11 @@ in {
         startup = [
         ];
 
-        bars = [
-          {
-            command = "${waybar}/bin/waybar";
-          }
-        ];
+        bars = [];
+        #   {
+        #     command = "${waybar}/bin/waybar";
+        #   }
+        # ];
       };
       config = {
         input = {
@@ -148,9 +148,6 @@ in {
           # "${modifier}+Shift+${down}" = "move down";
           # "${modifier}+Shift+${up}" = "move up";
           # "${modifier}+Shift+${right}" = "move right";
-
-          # audio control
-          # bindsym XF86AudioMute
 
           "XF86AudioMicMute" = "exec pactl set-source-mute 0 toggle";
           "XF86AudioPlay" = "exec playerctl play-pause";
