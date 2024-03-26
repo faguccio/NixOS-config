@@ -145,7 +145,8 @@ in {
         };
 
         "memory" = {
-          format = "{}% ";
+          format = "{used:0.1f}G/{total:0.1f}G% ";
+          interval = 30;
         };
         "temperature" = {
           # thermal-zone" = 2;
