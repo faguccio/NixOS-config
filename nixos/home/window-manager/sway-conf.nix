@@ -24,7 +24,6 @@ in {
           gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
           gsettings set org.gnome.desktop.interface cursor-size 32
         }
-
         seat seat0 xcursor_theme oreo_white_cursors 32
       '';
 
@@ -108,6 +107,7 @@ in {
           # # rofi: password store
           "${modifier}+e" = "exec ${firefox}/bin/firefox";
           "${modifier}+w" = "kill";
+          "${modifier}+l" = "swaylock -e -f- i ~/Pictures/angry-misato.png; systemctl suspend";
           # # pick color
           # "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
           # # mirror screen
