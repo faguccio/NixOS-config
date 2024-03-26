@@ -22,6 +22,7 @@
     slurp
     grim
     gtk3
+    swaylock
 
     telegram-desktop
     firefox
