@@ -1,5 +1,4 @@
-{pkgs, ...} :
-{
+{pkgs, ...}: let
   sium = pkgs.writeShellScriptBin "nix-rebuild-commit" ''
     set -e
     pushd ~/mynix-conf/nixos/
@@ -35,6 +34,6 @@
     # Notify all OK!
     notify-send -e "NixOS Rebuilt OK!" --icon=software-update-available
   '';
-
-  environment.systemPackages = [ sium ];
+in {
+  environment.systemPackages = [sium];
 }
