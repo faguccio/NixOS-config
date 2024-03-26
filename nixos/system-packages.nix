@@ -17,9 +17,6 @@
     neofetch
     htop
     home-manager
-    waybar
-    swaylock
-    # foot
     wl-clipboard
 
     telegram-desktop

@@ -12,6 +12,7 @@
     ./system-packages.nix
     ./fonts.nix
     ./home
+    ./services.nix
   ];
 
   # Bootloader.
@@ -89,7 +90,7 @@
   '';
 
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  security.rtkit.enable = true;
   programs.light.enable = true;
 
   # For garbage colection
