@@ -13,6 +13,7 @@
     ./fonts.nix
     ./home
     ./services.nix
+    ./scripts.nix
   ];
 
   # Bootloader.
