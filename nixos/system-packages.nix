@@ -21,6 +21,7 @@
     pulseaudio
     slurp
     grim
+    gtk3
 
     telegram-desktop
     firefox
