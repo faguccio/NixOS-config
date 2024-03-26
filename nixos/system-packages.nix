@@ -22,5 +22,6 @@
     swaylock
     foot
     pipewire
+    telegram-desktop
   ];
 }
