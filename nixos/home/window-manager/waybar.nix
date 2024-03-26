@@ -36,17 +36,17 @@ in {
           "sway/mode"
         ];
         modules-center = [
-          "clock"
+          "cpu"
+          "memory"
+          "battery"
         ];
         modules-right = [
           "bluetooth"
           "network"
           "pulseaudio"
           "backlight"
-          "cpu"
-          "memory"
-          "battery"
           "tray"
+          "clock"
         ];
         "keyboard-state" = {
           numlock = true;
@@ -133,9 +133,17 @@ in {
           format = "{:%A ● %d-%m-%Y ● %H:%M}";
         };
         "cpu" = {
-          format = "{usage}% ";
+          interval = 1;
+          format = "{icon0}{icon1}{icon2}{icon3} {usage:>2}%  ";
+          format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
           tooltip = false;
+          "states" = {
+            "good" = 10;
+            "warning" = 40;
+            "critical" = 70;
+          };
         };
+
         "memory" = {
           format = "{}% ";
         };
@@ -171,9 +179,9 @@ in {
         };
         "battery" = {
           states = {
-            good = 97;
-            warning = 30;
-            critical = 10;
+            good = 95;
+            warning = 40;
+            critical = 20;
           };
           interval = 2;
           format = "{capacity}% {icon}";
