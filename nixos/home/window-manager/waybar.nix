@@ -46,7 +46,6 @@ in {
         modules-right = [
           "bluetooth"
           "network"
-
           "tray"
           "clock"
         ];
@@ -62,22 +61,22 @@ in {
         "sway/mode" = {
           format = "<span style=\"italic\">{}</span>";
         };
-        "sway/workspaces" = {
-          on-click = "activate";
-          sort-by-number = true;
-          format = "{icon}";
-          format-icons = {
-            "1" = "";
-            "2" = "";
-            "3" = "";
-            "4" = "";
-            "5" = "";
-            "6" = "";
-            "7" = "";
-            "8" = "";
-            "9" = "";
-          };
-        };
+        # "sway/workspaces" = {
+        #   on-click = "activate";
+        #   sort-by-number = true;
+        #   format = "{icon}";
+        #   format-icons = {
+        #     "1" = "";
+        #     "2" = "";
+        #     "3" = "";
+        #     "4" = "";
+        #     "5" = "";
+        #     "6" = "";
+        #     "7" = "";
+        #     "8" = "";
+        #     "9" = "";
+        #   };
+        # };
         "sway/scratchpad" = {
           format = "{icon} {count}";
           show-empty = false;
@@ -236,8 +235,8 @@ in {
     };
     style = ''
       * {
-        font-family: FontAwesome, Fira Code;
-        font-size: 12px;
+        font-family: IBM Plex Mono, Fira Code;
+        font-size: 16px;
       }
 
       window#waybar {
