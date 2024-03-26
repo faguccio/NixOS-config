@@ -240,7 +240,7 @@ in {
       }
 
       window#waybar {
-        /*color: ${foreground};*/
+        color: ${foreground};
         background-color: ${background};
         border-bottom: 3px solid ${regular4};
         transition-property: background-color;
@@ -336,26 +336,26 @@ in {
 
       #clock {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular13};
         border-bottom: 3px solid ${regular13};
       }
 
       #battery {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular6};
         border-bottom: 3px solid ${regular6};
       }
 
       #battery.charging, #battery.plugged {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular6};
         border-bottom: 3px solid ${regular6};
       }
 
       @keyframes blink {
         to {
           color: ${regular0};
-          background-color: transparent;
+          background-color: ${regular6};
           border-bottom: 3px solid ${regular6};
         }
       }
@@ -379,83 +379,83 @@ in {
 
       label:focus {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular4};
         border-bottom: 3px solid ${regular4};
       }
 
       #cpu {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular3};
         border-bottom: 3px solid ${regular3};
       }
 
       #memory {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular11};
         border-bottom: 3px solid ${regular11};
       }
 
       #disk {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular12};
         border-bottom: 3px solid ${regular12};
       }
 
       #backlight {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular5};
         border-bottom: 3px solid ${regular5};
       }
 
       #network {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular10};
         border-bottom: 3px solid ${regular10};
       }
 
       #network.disconnected {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular3};
         border-bottom: 3px solid ${regular3};
       }
 
       #pulseaudio {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular2};
         border-bottom: 3px solid ${regular2};
       }
 
       #pulseaudio.muted {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular2};
         border-bottom: 3px solid ${regular2};
       }
 
       #wireplumber {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular2};
         border-bottom: 3px solid ${regular2};
       }
 
       #wireplumber.muted {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular2};
         border-bottom: 3px solid ${regular2};
       }
 
       #temperature {
         color: ${regular0};
-        background-color: transparent;
+        background-color: ${regular7};
         border-bottom: 3px solid ${regular7};
       }
 
       #temperature.critical {
-        background-color: transparent;
+        background-color: ${regular7};
         border-bottom: 3px solid ${regular7};
       }
 
       #tray {
-        background-color: transparent;
+        background-color: ${regular9};
         border-bottom: 3px solid ${regular9};
       }
 
@@ -465,7 +465,7 @@ in {
 
       #tray > .needs-attention {
         -gtk-icon-effect: highlight;
-        background-color: transparent;
+        background-color: ${regular14};
         border-bottom: 3px solid ${regular14};
       }
 
