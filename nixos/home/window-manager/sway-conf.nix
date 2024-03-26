@@ -22,7 +22,7 @@ in {
         font pango:monospace 0
         output * bg ~/Pictures/background.jpg stretch
 
-        exec swaymsg output eDP-1 scale 1.2
+        exec swaymsg output eDP-1 scale 1
 
         exec_always {
           gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
