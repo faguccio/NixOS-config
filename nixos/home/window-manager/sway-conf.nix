@@ -18,7 +18,7 @@ in {
       enable = true;
       extraConfig = ''
         font pango:monospace 0
-        output * bg ~/Pictures/background.jpg
+        output * bg ~/Pictures/background.jpg stretch
       '';
 
       config = rec {
