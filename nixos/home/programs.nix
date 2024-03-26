@@ -18,7 +18,7 @@
       settings = {
         main = {
           font = "IBM Plex Mono:size=16";
-          term = "foot-extra";
+          term = "foot";
           # box-drawings-uses-font-glyphs = "no";
           # dpi-aware = "no";
         };
