@@ -42,10 +42,10 @@ in {
           "memory"
           "temperature"
           "battery"
-          "pulseaudio"
-          "backlight"
         ];
         modules-right = [
+          "pulseaudio"
+          "backlight"
           "bluetooth"
           "network"
           "tray"
