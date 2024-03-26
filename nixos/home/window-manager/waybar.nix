@@ -38,13 +38,15 @@ in {
         modules-center = [
           "cpu"
           "memory"
+          "temperature"
           "battery"
+          "pulseaudio"
+          "backlight"
         ];
         modules-right = [
           "bluetooth"
           "network"
-          "pulseaudio"
-          "backlight"
+
           "tray"
           "clock"
         ];
@@ -145,7 +147,7 @@ in {
         };
 
         "memory" = {
-          format = "{used:0.1f}G/{total:0.1f}G% ";
+          format = "{used:0.1f}G/{total:0.1f}G ";
           interval = 30;
         };
         "temperature" = {
