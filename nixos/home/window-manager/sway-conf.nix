@@ -98,50 +98,11 @@ in {
           # # rofi: bluetooth
           # "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
           # # rofi: password store
-          # "${modifier}+e" = "exec ${rofi-pass-wayland}/bin/rofi-pass";
+          "${modifier}+e" = "exec ${firefox}/bin/firefox";
           # # pick color
           # "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
           # # mirror screen
           # "${modifier}+o" = "exec ${wl-mirror}/bin/wl-present mirror";
-
-          # # modes
-          # "${modifier}+g" = "mode recording";
-          # "${modifier}+p" = "mode printscreen";
-          # "${modifier}+q" = "mode browser";
-          # "${modifier}+r" = "mode resize";
-          # "${modifier}+u" = "mode audio";
-          # "${modifier}+x" = "mode session";
-
-          # "${modifier}+period" = "workspace next";
-          # "${modifier}+comma" = "workspace prev";
-
-          # "${modifier}+1" = "workspace number 1";
-          # "${modifier}+2" = "workspace number 2";
-          # "${modifier}+3" = "workspace number 3";
-          # "${modifier}+4" = "workspace number 4";
-          # "${modifier}+5" = "workspace number 5";
-          # "${modifier}+6" = "workspace number 6";
-          # "${modifier}+7" = "workspace number 7";
-          # "${modifier}+8" = "workspace number 8";
-          # "${modifier}+9" = "workspace number 9";
-
-          # "${modifier}+Shift+period" = "move container to workspace next; workspace next";
-          # "${modifier}+Shift+comma" = "move container to workspace prev; workspace prev";
-
-          # "${modifier}+Shift+1" = "move container to workspace number 1";
-          # "${modifier}+Shift+2" = "move container to workspace number 2";
-          # "${modifier}+Shift+3" = "move container to workspace number 3";
-          # "${modifier}+Shift+4" = "move container to workspace number 4";
-          # "${modifier}+Shift+5" = "move container to workspace number 5";
-          # "${modifier}+Shift+6" = "move container to workspace number 6";
-          # "${modifier}+Shift+7" = "move container to workspace number 7";
-          # "${modifier}+Shift+8" = "move container to workspace number 8";
-          # "${modifier}+Shift+9" = "move container to workspace number 9";
-
-          # "${modifier}+${left}" = "focus left";
-          # "${modifier}+${down}" = "focus down";
-          # "${modifier}+${up}" = "focus up";
-          # "${modifier}+${right}" = "focus right";
 
           # "${modifier}+Ctrl+${left}" = "move workspace to output left";
           # "${modifier}+Ctrl+${down}" = "move workspace to output down";
