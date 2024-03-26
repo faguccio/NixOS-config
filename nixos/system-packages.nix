@@ -19,9 +19,7 @@
     home-manager
     waybar
     swaylock
-    foot
-    #pipewire
-    #pipewire-pulse
+    # foot
     wl-clipboard
 
     telegram-desktop
