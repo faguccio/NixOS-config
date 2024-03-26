@@ -131,12 +131,12 @@ in {
         };
         "clock" = {
           interval = 60;
-          tooltip = false;
-          format = "{%d-%m-%Y ● %H:%M}";
+          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+          format-alt = "{:%Y-%m-%d}";
         };
         "cpu" = {
           interval = 1;
-          format = "{icon0}{icon1}{icon2}{icon3} {usage:>2}% "; #
+          format = "{icon0}{icon1}{icon2}{icon3} {usage:>2}%  ";
           format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
           tooltip = false;
           "states" = {
