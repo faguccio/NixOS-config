@@ -22,11 +22,11 @@ in {
         startup = [
         ];
 
-        bars = [];
-        #   {
-        #     command = "${waybar}/bin/waybar";
-        #   }
-        # ];
+        bars = [
+          {
+            command = "${waybar}/bin/waybar";
+          }
+        ];
       };
       config = {
         input = {
