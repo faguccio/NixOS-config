@@ -18,6 +18,8 @@
   regular13 = "#99D1DB"; # sky
   regular14 = "#85C1DC"; # sapphire
   regular15 = "#BABBF1"; # lavender
+
+  bottomBorder = "5";
 in {
   home-manager.users.f4g4.programs.waybar = {
     enable = true;
@@ -242,7 +244,7 @@ in {
       window#waybar {
         color: ${foreground};
         background-color: ${background};
-        border-bottom: 3px solid ${regular4};
+        border-bottom: ${bottomBorder}px solid ${regular4};
         transition-property: background-color;
         transition-duration: .5s;
       }
@@ -270,14 +272,14 @@ in {
       }
 
       button {
-        box-shadow: inset 0 -3px transparent;
+        box-shadow: inset 0 -${bottomBorder}px transparent;
         border: none;
         border-radius: 0;
       }
 
       button:hover {
         background: inherit;
-        box-shadow: inset 0 -3px ${foreground};
+        box-shadow: inset 0 -${bottomBorder}px ${foreground};
       }
 
       #workspaces button {
@@ -291,7 +293,7 @@ in {
 
       #workspaces button.focused {
         background-color: ${regular4};
-        box-shadow: inset 0 -3px ${foreground};
+        box-shadow: inset 0 -${bottomBorder}px ${foreground};
       }
 
       #workspaces button.urgent {
@@ -301,7 +303,7 @@ in {
       #mode {
         color: ${regular0};
         background-color: ${regular4};
-        border-bottom: 3px solid ${foreground};
+        border-bottom: ${bottomBorder}px solid ${foreground};
       }
 
       #clock,
@@ -336,34 +338,34 @@ in {
 
       #clock {
         color: ${regular0};
-        background-color: ${regular13};
-        border-bottom: 3px solid ${regular13};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular13};
       }
 
       #battery {
         color: ${regular0};
-        background-color: ${regular6};
-        border-bottom: 3px solid ${regular6};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular6};
       }
 
       #battery.charging, #battery.plugged {
         color: ${regular0};
-        background-color: ${regular6};
-        border-bottom: 3px solid ${regular6};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular6};
       }
 
       @keyframes blink {
         to {
           color: ${regular0};
-          background-color: ${regular6};
-          border-bottom: 3px solid ${regular6};
+          background-color: transparent;
+          border-bottom: ${bottomBorder}px solid ${regular6};
         }
       }
 
       #battery.critical:not(.charging) {
         color: ${regular0};
         background-color: ${regular1};
-        border-bottom: 3px solid ${regular6};
+        border-bottom: ${bottomBorder}px solid ${regular6};
         animation-name: blink;
         animation-duration: 0.5s;
         animation-timing-function: linear;
@@ -374,89 +376,89 @@ in {
       #bluetooth {
         color: ${regular0};
         background-color: transparent;
-        border-bottom: 3px solid ${regular8};
+        border-bottom: ${bottomBorder}px solid ${regular8};
       }
 
       label:focus {
         color: ${regular0};
-        background-color: ${regular4};
-        border-bottom: 3px solid ${regular4};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular4};
       }
 
       #cpu {
         color: ${regular0};
-        background-color: ${regular3};
-        border-bottom: 3px solid ${regular3};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular3};
       }
 
       #memory {
         color: ${regular0};
-        background-color: ${regular11};
-        border-bottom: 3px solid ${regular11};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular11};
       }
 
       #disk {
         color: ${regular0};
-        background-color: ${regular12};
-        border-bottom: 3px solid ${regular12};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular12};
       }
 
       #backlight {
         color: ${regular0};
-        background-color: ${regular5};
-        border-bottom: 3px solid ${regular5};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular5};
       }
 
       #network {
         color: ${regular0};
-        background-color: ${regular10};
-        border-bottom: 3px solid ${regular10};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular10};
       }
 
       #network.disconnected {
         color: ${regular0};
-        background-color: ${regular3};
-        border-bottom: 3px solid ${regular3};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular3};
       }
 
       #pulseaudio {
         color: ${regular0};
-        background-color: ${regular2};
-        border-bottom: 3px solid ${regular2};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular2};
       }
 
       #pulseaudio.muted {
         color: ${regular0};
-        background-color: ${regular2};
-        border-bottom: 3px solid ${regular2};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular2};
       }
 
       #wireplumber {
         color: ${regular0};
-        background-color: ${regular2};
-        border-bottom: 3px solid ${regular2};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular2};
       }
 
       #wireplumber.muted {
         color: ${regular0};
-        background-color: ${regular2};
-        border-bottom: 3px solid ${regular2};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular2};
       }
 
       #temperature {
         color: ${regular0};
-        background-color: ${regular7};
-        border-bottom: 3px solid ${regular7};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular7};
       }
 
       #temperature.critical {
-        background-color: ${regular7};
-        border-bottom: 3px solid ${regular7};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular7};
       }
 
       #tray {
-        background-color: ${regular9};
-        border-bottom: 3px solid ${regular9};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular9};
       }
 
       #tray > .passive {
@@ -465,28 +467,28 @@ in {
 
       #tray > .needs-attention {
         -gtk-icon-effect: highlight;
-        background-color: ${regular14};
-        border-bottom: 3px solid ${regular14};
+        background-color: transparent;
+        border-bottom: ${bottomBorder}px solid ${regular14};
       }
 
       #mpd {
         background-color: transparent;
-        border-bottom: 3px solid ${regular15};
+        border-bottom: ${bottomBorder}px solid ${regular15};
       }
 
       #mpd.disconnected {
         background-color: transparent;
-        border-bottom: 3px solid ${regular15};
+        border-bottom: ${bottomBorder}px solid ${regular15};
       }
 
       #mpd.stopped {
         background-color: transparent;
-        border-bottom: 3px solid ${regular15};
+        border-bottom: ${bottomBorder}px solid ${regular15};
       }
 
       #mpd.paused {
         background-color: transparent;
-        border-bottom: 3px solid ${regular15};
+        border-bottom: ${bottomBorder}px solid ${regular15};
       }
     '';
   };
