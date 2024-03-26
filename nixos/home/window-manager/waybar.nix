@@ -30,7 +30,7 @@ in {
             mainBar = {
               layer = "bottom";
               position = "top";
-              height = 24;
+              height = 34;
               spacing = 0;
               output = [
                 "eDP-1"
