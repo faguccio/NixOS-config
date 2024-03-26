@@ -18,6 +18,7 @@
     htop
     home-manager
     wl-clipboard
+    pulseaudio
 
     telegram-desktop
     firefox
