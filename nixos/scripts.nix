@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  sium = pkgs.writeShellScriptBin "nix-rebuild-commit" ''
+  sium = pkgs.writeShellScriptBin "rebuild-commit" ''
     set -e
     pushd ~/mynix-conf/nixos/
 
