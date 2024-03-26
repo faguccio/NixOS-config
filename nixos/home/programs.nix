@@ -1,9 +1,6 @@
 {pkgs, ...}: {
   home-manager.users.f4g4 = {
     home.packages = with pkgs; [
-      waybar
-      swaylock
-      foot
     ];
 
     programs.git = {

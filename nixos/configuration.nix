@@ -56,7 +56,22 @@
   users.users.f4g4 = {
     isNormalUser = true;
     description = "Fabio";
-    extraGroups = ["networkmanager" "wheel" "video"];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "video"
+      "disk"
+      "dbus"
+      "audio"
+      "docker"
+      "sound"
+      "pulse"
+      "adbusers"
+      "input"
+      "libvirtd"
+      "vboxusers"
+      "wireshark"
+    ];
     packages = with pkgs; [];
   };
 
@@ -66,6 +81,20 @@
   # For sway
   security.polkit.enable = true;
   programs.light.enable = true;
+
+  environment.loginShellInit = ''
+    [[ "$(tty)" == /dev/tty1 ]] && sway
+  '';
+
+  # For garbage colection
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
+
+  # Optimizing storage by hardlinking
+  # nix.settings.auto-optimise-store = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

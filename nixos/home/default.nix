@@ -3,6 +3,7 @@
     <home-manager/nixos>
     ./programs.nix
     ./window-manager
+    ./programs.nix
   ];
 
   home-manager.users.f4g4 = {pkgs, ...}: {

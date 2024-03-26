@@ -18,5 +18,9 @@
     neofetch
     htop
     home-manager
+    waybar
+    swaylock
+    foot
+    pipewire
   ];
 }
