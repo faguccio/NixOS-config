@@ -152,11 +152,11 @@ in {
           # audio control
           # bindsym XF86AudioMute
 
-          # bindsym XF86AudioMicMute      exec pactl set-source-mute 0 toggle
-          # bindsym XF86AudioPlay         exec playerctl play-pause
-          # bindsym XF86AudioPrev         exec playerctl previous
-          # bindsym XF86AudioNext         exec playerctl next
-          # bindsym XF86AudioStop         exec playerctl stop
+          "XF86AudioMicMute" = "exec pactl set-source-mute 0 toggle";
+          "XF86AudioPlay" = "exec playerctl play-pause";
+          "XF86AudioPrev" = "exec playerctl previous";
+          "XF86AudioNext" = "exec playerctl next";
+          "XF86AudioStop" = "exec playerctl stop";
           "XF86AudioRaiseVolume" = "exec pactl set-sink-volume 0 +2%";
           "XF86AudioLowerVolume" = "exec pactl set-sink-volume 0 -2%";
           "XF86AudioMute" = "exec pactl set-sink-mute 0 toggle";
