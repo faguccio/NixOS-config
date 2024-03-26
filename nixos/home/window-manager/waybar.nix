@@ -230,7 +230,7 @@ in {
       }
 
       window#waybar {
-        color: ${foreground};
+        /*color: ${foreground};*/
         background-color: ${background};
         border-bottom: 3px solid ${regular4};
         transition-property: background-color;
