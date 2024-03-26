@@ -111,7 +111,7 @@ in {
           # # rofi: password store
           "${modifier}+e" = "exec ${firefox}/bin/firefox";
           "${modifier}+w" = "kill";
-          "${modifier}+l" = "swaylock -e -f- i ~/Pictures/angry-misato.png; systemctl suspend";
+          "${modifier}+l" = "exec swaylock -e -f- i ~/Pictures/angry-misato.png; systemctl suspend";
           # # pick color
           # "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
           # # mirror screen
