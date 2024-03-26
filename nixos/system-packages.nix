@@ -23,5 +23,6 @@
     telegram-desktop
     firefox
     vscodium
+    #obsidian
   ];
 }
