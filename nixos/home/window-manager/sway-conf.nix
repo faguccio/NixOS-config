@@ -13,6 +13,8 @@ with pkgs; let
 
   modifier = "Mod4";
 in {
+  security.pam.services.swaylock = {};
+
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
       enable = true;
