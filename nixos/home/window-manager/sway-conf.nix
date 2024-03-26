@@ -116,6 +116,9 @@ in {
           # "${modifier}+Shift+${up}" = "move up";
           # "${modifier}+Shift+${right}" = "move right";
 
+          "Print" = ''exec grim -g "$(slurp -d)" - | wl-copy'';
+
+          # audio
           "XF86AudioMicMute" = "exec pactl set-source-mute 0 toggle";
           "XF86AudioPlay" = "exec playerctl play-pause";
           "XF86AudioPrev" = "exec playerctl previous";
@@ -124,11 +127,6 @@ in {
           "XF86AudioRaiseVolume" = "exec pactl set-sink-volume 0 +2%";
           "XF86AudioLowerVolume" = "exec pactl set-sink-volume 0 -2%";
           "XF86AudioMute" = "exec pactl set-sink-mute 0 toggle";
-
-          # mic control
-          "${modifier}+XF86AudioRaiseVolume" = "exec ${pamixer}/bin/pamixer --default-source --increase 2";
-          "${modifier}+XF86AudioLowerVolume" = "exec ${pamixer}/bin/pamixer --default-source --decrease 2";
-          "${modifier}+XF86AudioMute" = "exec ${pamixer}/bin/pamixer --default-source -t";
 
           # brightness
           "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 2";

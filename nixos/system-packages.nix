@@ -19,6 +19,8 @@
     home-manager
     wl-clipboard
     pulseaudio
+    slurp
+    grim
 
     telegram-desktop
     firefox
