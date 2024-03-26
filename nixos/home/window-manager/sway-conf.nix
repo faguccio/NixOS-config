@@ -19,6 +19,11 @@ in {
       extraConfig = ''
         font pango:monospace 0
         output * bg ~/Pictures/background.jpg stretch
+
+        exec_always {
+          gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
+          gsettings set org.gnome.desktop.interface cursor-size 32
+        }
       '';
 
       config = rec {
