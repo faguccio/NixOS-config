@@ -89,8 +89,6 @@
     [[ "$(tty)" == /dev/tty1 ]] && sway
   '';
 
-  sound.enable = true;
-  security.rtkit.enable = true;
   programs.light.enable = true;
 
   # For garbage colection
