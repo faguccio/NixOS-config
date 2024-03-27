@@ -26,6 +26,9 @@
       };
       history.size = 10000;
       #history.path = "${config.xdg.dataHome}/zsh/history";
+      initExtra = ''
+        source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh
+      '';
     };
 
     programs.zsh.prezto.enable = true;
