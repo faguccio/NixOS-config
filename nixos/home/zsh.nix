@@ -3,14 +3,15 @@
   pkgs,
   ...
 }: {
-  environment.pathsToLink = [ "/share/zsh" ];
+  environment.pathsToLink = ["/share/zsh"];
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   home-manager.users.f4g4 = {
     # home.packages = with pkgs; [
     # ];
 
     programs.zsh = {
-      enable = true;
       enableCompletion = true;
       #autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
