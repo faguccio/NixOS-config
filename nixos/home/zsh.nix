@@ -7,6 +7,10 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  #   environment.systemPackages = [
+  #   pkgs.zsh-prezto
+  # ];
+
   home-manager.users.f4g4 = {
     # home.packages = with pkgs; [
     # ];
@@ -23,5 +27,7 @@
       history.size = 10000;
       #history.path = "${config.xdg.dataHome}/zsh/history";
     };
+
+    programs.zsh.prezto.enable = true;
   };
 }

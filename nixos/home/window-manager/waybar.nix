@@ -136,7 +136,7 @@ in {
         };
         "cpu" = {
           interval = 1;
-          format = "{icon0}{icon1}{icon2}{icon3} {usage:>2}%  ";
+          format = "{icon0}{icon1}{icon2}{icon3} {usage:>2}% "; #
           format-icons = ["▁" "▂" "▃" "▄" "▅" "▆" "▇" "█"];
           tooltip = false;
           "states" = {
