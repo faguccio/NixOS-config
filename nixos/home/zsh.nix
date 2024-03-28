@@ -26,9 +26,9 @@
       };
       history.size = 10000;
       #history.path = "${config.xdg.dataHome}/zsh/history";
-      # initExtra = ''
-      #   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh
-      # '';
+      initExtra = ''
+        bindkey "''${key[Up]}" up-line-or-search
+      '';
       zplug = {
         enable = true;
         plugins = [
