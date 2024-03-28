@@ -15,7 +15,7 @@
 
   services.syncthing = {
     enable = true;
-    user = "myusername";
+    user = "f4g4";
     dataDir = "/home/myusername/Documents"; # Default folder for new synced folders
     configDir = "/home/myusername/Documents/.config/syncthing"; # Folder for Syncthing's settings and keys
   };
