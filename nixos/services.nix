@@ -13,10 +13,12 @@
     pulse.enable = true;
   };
 
-  services.syncthing = {
-    enable = true;
+  services.syncthing = let
     user = "f4g4";
-    dataDir = "/home/myusername/Documents"; # Default folder for new synced folders
-    configDir = "/home/myusername/Documents/.config/syncthing"; # Folder for Syncthing's settings and keys
+  in {
+    enable = true;
+    user = "${user}";
+    dataDir = "/home/${user}/"; # Default folder for new synced folders
+    configDir = "/home/${user}/.config/syncthing"; # Folder for Syncthing's settings and keys
   };
 }

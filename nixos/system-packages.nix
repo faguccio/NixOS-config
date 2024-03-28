@@ -27,6 +27,7 @@
     telegram-desktop
     firefox
     vscodium
+    syncthing
     #obsidian
   ];
 }
