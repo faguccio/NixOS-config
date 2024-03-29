@@ -22,15 +22,17 @@
 
       shellAliases = {
         ll = "ls -l";
-        update = "sudo nixos-rebuild switch";
       };
       history.size = 10000;
       #history.path = "${config.xdg.dataHome}/zsh/history";
       initExtra = ''
+
         bindkey "''${key[Up]}" up-line-or-search
       '';
+
       zplug = {
         enable = true;
+        zplugHome = "~/.zplug";
         plugins = [
           {name = "zsh-users/zsh-autosuggestions";} # Simple plugin installation
           {
