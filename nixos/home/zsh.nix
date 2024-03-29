@@ -32,7 +32,7 @@
         fi
 
       '';
-      dotDir = "$HOME/.config/zsh";
+      dotDir = ".config/zsh";
 
       prezto = {
         enable = true;
