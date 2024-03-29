@@ -26,21 +26,39 @@
       history.size = 10000;
       #history.path = "${config.xdg.dataHome}/zsh/history";
       initExtra = ''
-
         bindkey "''${key[Up]}" up-line-or-search
       '';
 
-      zplug = {
+      prezto = {
         enable = true;
-        zplugHome = "~/.zplug";
-        plugins = [
-          {name = "zsh-users/zsh-autosuggestions";} # Simple plugin installation
-          {
-            name = "romkatv/powerlevel10k";
-            tags = [as:theme depth:1];
-          } # Installations with additional options. For the list of options, please refer to Zplug README.
+        pmodules = [
+          "environment"
+          "terminal"
+          "editor"
+          "history"
+          "directory"
+          "spectrum"
+          "utility"
+          "completion"
+          "prompt"
+          "history-substring-search"
+          "git"
+          "syntax-highlighting"
+          "autosuggesitons"
         ];
       };
+
+      #   zplug = {
+      #     enable = true;
+      #     zplugHome = "~/.zplug";
+      #     plugins = [
+      #       {name = "zsh-users/zsh-autosuggestions";} # Simple plugin installation
+      #       {
+      #         name = "romkatv/powerlevel10k";
+      #         tags = [as:theme depth:1];
+      #       } # Installations with additional options. For the list of options, please refer to Zplug README.
+      #     ];
+      #   };
     };
   };
 }
