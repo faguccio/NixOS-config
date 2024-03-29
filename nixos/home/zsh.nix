@@ -17,7 +17,7 @@
 
     programs.zsh = {
       enableCompletion = true;
-      # autosuggestions.enable = true;
+      enableAutosuggestions = true;
       syntaxHighlighting.enable = true;
 
       shellAliases = {
@@ -27,7 +27,9 @@
       historySubstringSearch.enable = true;
       #history.path = "${config.xdg.dataHome}/zsh/history";
       initExtra = ''
-        echo ciao
+        if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+          source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+        fi
 
       '';
       dotDir = ".config/zsh";
