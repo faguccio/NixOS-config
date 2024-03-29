@@ -27,9 +27,7 @@
       historySubstringSearch.enable = true;
       #history.path = "${config.xdg.dataHome}/zsh/history";
       initExtra = ''
-        if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-          source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-        fi
+        echo ciao
 
       '';
       dotDir = ".config/zsh";
