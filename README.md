@@ -5,6 +5,7 @@ Using sway, I'm a stud yeah.
 
 ## Something about my config
 
+Can't make zsh work right :(
 
 ## Some Nix commands
 

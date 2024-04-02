@@ -62,22 +62,22 @@ in {
         "sway/mode" = {
           format = "<span style=\"italic\">{}</span>";
         };
-        # "sway/workspaces" = {
-        #   on-click = "activate";
-        #   sort-by-number = true;
-        #   format = "{icon}";
-        #   format-icons = {
-        #     "1" = "";
-        #     "2" = "";
-        #     "3" = "";
-        #     "4" = "";
-        #     "5" = "";
-        #     "6" = "";
-        #     "7" = "";
-        #     "8" = "";
-        #     "9" = "";
-        #   };
-        # };
+        "sway/workspaces" = {
+          on-click = "activate";
+          sort-by-number = true;
+          # format = "{icon}";
+          # format-icons = {
+          #   "1" = "";
+          #   "2" = "";
+          #   "3" = "";
+          #   "4" = "";
+          #   "5" = "";
+          #   "6" = "";
+          #   "7" = "";
+          #   "8" = "";
+          #   "9" = "";
+          # };
+        };
         "sway/scratchpad" = {
           format = "{icon} {count}";
           show-empty = false;
@@ -283,7 +283,7 @@ in {
 
       #workspaces button {
         padding: 0 5px;
-        background-color: transparent;
+        background-color: ${regular0};
       }
 
       #workspaces button:hover {
