@@ -7,16 +7,12 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
-  #   environment.systemPackages = [
-  #   pkgs.zsh-prezto
-  # ];
-
   home-manager.users.f4g4 = {
     # home.packages = with pkgs; [
     # ];
 
     programs.zsh = {
-      #enableCompletion = true;
+      enableCompletion = true;
       #enableAutosuggestions = true;
       syntaxHighlighting.enable = true;
 
