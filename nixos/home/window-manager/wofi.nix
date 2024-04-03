@@ -35,12 +35,12 @@ in {
           window {
               background-color: ${background};
               color: ${foreground};
+              boder-radius: 10px;
           }
 
           #outer-box {
               margin: 10px;
               color: ${regular4};
-              boder-radius: 10px;
           }
 
           #scroll label {
