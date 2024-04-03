@@ -6,7 +6,7 @@
   #environment.pathsToLink = ["/share/zsh"];
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  environment.shells = with pkgs; [zsh];
+  #environment.shells = with pkgs; [zsh];
 
   home-manager.users.f4g4 = {
     # home.packages = with pkgs; [
