@@ -113,6 +113,7 @@ in {
           "${modifier}+o" = "exec ${obsidian}/bin/obsidian";
           "${modifier}+w" = "kill";
           "${modifier}+l" = "exec swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend";
+          "${modifier}+space" = "exec wofi -S run";
           # # pick color
           # "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
           # # mirror screen
