@@ -39,7 +39,7 @@ in {
 
           #outer-box {
               margin: 10px;
-              background-color: ${regular4};
+              color: ${regular4};
           }
       '';
     };
