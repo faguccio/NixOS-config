@@ -26,7 +26,7 @@ in {
   home-manager.users.f4g4 = {
     programs.wofi = {
       enable = true;
-      settings = {location = "top_right";};
+      # settings = {location = "top_right";};
       style = ''
         * {
               font-family: monospace;
@@ -35,7 +35,11 @@ in {
           window {
               background-color: ${background};
               color: ${foreground};
-              border: 5px solid ${regular4};
+          }
+
+          #outer-box {
+              margin: 10px;
+              background-color: ${regular4};
           }
       '';
     };
