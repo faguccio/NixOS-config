@@ -131,7 +131,7 @@ in {
           # "${modifier}+Shift+${up}" = "move up";
           # "${modifier}+Shift+${right}" = "move right";
 
-          "Print" = ''exec grim -g "$(slurp -d)" - | wl-copy'';
+          "Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
 
           # audio
           "XF86AudioMicMute" = "exec pactl set-source-mute 0 toggle";
