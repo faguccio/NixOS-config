@@ -47,7 +47,7 @@ in {
 
         window {
             opacity: 0.9;
-            border:  0px;
+            border:  2px;
             border-radius: 10px;
             font-family: monospace;
             font-size: 18px;
