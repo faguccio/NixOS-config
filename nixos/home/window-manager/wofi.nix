@@ -28,7 +28,7 @@ in {
       enable = true;
       # settings = {location = "top_right";};
       style = ''
-             @define-color base00 #282828;
+        @define-color base00 #282828;
         @define-color base01 #3C3836;
         @define-color base02 #504945;
         @define-color base03 #665C54;
@@ -49,6 +49,7 @@ in {
             opacity: 0.9;
             border:  2px;
             border-radius: 10px;
+            border-color: base01;
             font-family: monospace;
             font-size: 18px;
         }
