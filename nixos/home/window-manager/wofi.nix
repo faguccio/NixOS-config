@@ -50,6 +50,8 @@ in {
             border-radius: 10px;
             font-family: monospace;
             font-size: 18px;
+             border:  2px;
+             border-color: base0A;
         }
 
         #input {
@@ -72,8 +74,7 @@ in {
         	margin: 0px;
         	background-color: @base00;
             border-radius: 10px;
-             border:  2px;
-             border-color: base0F;
+
         }
 
         #selected {
