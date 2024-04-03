@@ -9,6 +9,12 @@
   home-manager.users.f4g4 = {
     programs.zsh = {
       enable = true;
+
+      initExtra = ''
+        #         if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+        #           source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+        #         fi
+        #       '';
     };
   };
 }
