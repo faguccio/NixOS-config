@@ -4,6 +4,8 @@
   lib,
   ...
 }: {
+  programs.zsh.enable = true;
+
   home-manager.users.f4g4 = {
     programs.zsh = {
       enable = true;
@@ -12,7 +14,7 @@
 }
 # {
 #   #environment.pathsToLink = ["/share/zsh"];
-#   #programs.zsh.enable = true;
+#   #
 #   users.defaultUserShell = pkgs.zsh;
 #   #environment.shells = with pkgs; [zsh];
 #   home-manager.users.f4g4 = {
