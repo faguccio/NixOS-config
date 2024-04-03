@@ -40,6 +40,11 @@ in {
           #outer-box {
               margin: 10px;
               color: ${regular4};
+              boder-radius: 10px;
+          }
+
+          #scroll label {
+              margin: 2px 0px;
           }
       '';
     };
