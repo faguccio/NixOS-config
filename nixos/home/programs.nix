@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   home-manager.users.f4g4 = {
     home.packages = with pkgs; [
     ];

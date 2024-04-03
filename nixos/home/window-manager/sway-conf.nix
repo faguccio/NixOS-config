@@ -102,9 +102,6 @@ in {
         };
 
         keybindings = mkOptionDefault {
-          "${modifier}+Shift+0" = "move container to workspace number 0";
-          "${modifier}+0" = "workspace number 10";
-
           # # rofi: menu
           # "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
           # # rofi: clipboard manager
@@ -113,6 +110,7 @@ in {
           # "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
           # # rofi: password store
           "${modifier}+e" = "exec ${firefox}/bin/firefox";
+          "${modifier}+o" = "exec ${obsidian}/bin/obsidian";
           "${modifier}+w" = "kill";
           "${modifier}+l" = "exec swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend";
           # # pick color
@@ -124,6 +122,9 @@ in {
           # "${modifier}+Ctrl+${down}" = "move workspace to output down";
           # "${modifier}+Ctrl+${up}" = "move workspace to output up";
           # "${modifier}+Ctrl+${right}" = "move workspace to output right";
+
+          "${modifier}+Shift+0" = "move container to workspace number 0";
+          "${modifier}+0" = "workspace number 0";
 
           # "${modifier}+Shift+${left}" = "move left";
           # "${modifier}+Shift+${down}" = "move down";
