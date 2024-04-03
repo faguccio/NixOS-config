@@ -41,7 +41,7 @@
           "history-substring-search"
           "git"
           "syntax-highlighting"
-          "autosuggesitons"
+          # "autosuggesitons"
         ];
       };
     };
