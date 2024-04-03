@@ -35,6 +35,7 @@ in {
           window {
               background-color: ${background};
               color: ${foreground};
+              border: 4px;
               boder-radius: 10px;
           }
 
