@@ -47,9 +47,7 @@ in {
 
         window {
             opacity: 0.9;
-            border:  2px;
             border-radius: 10px;
-            border-color: base01;
             font-family: monospace;
             font-size: 18px;
         }
@@ -74,6 +72,8 @@ in {
         	margin: 0px;
         	background-color: @base00;
             border-radius: 10px;
+             border:  2px;
+             border-color: base0F;
         }
 
         #selected {
