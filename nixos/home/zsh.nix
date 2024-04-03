@@ -6,6 +6,7 @@
   #environment.pathsToLink = ["/share/zsh"];
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  environment.shells = with pkgs; [zsh];
 
   home-manager.users.f4g4 = {
     # home.packages = with pkgs; [
@@ -48,18 +49,6 @@
           "autosuggesitons"
         ];
       };
-
-      #   zplug = {
-      #     enable = true;
-      #     zplugHome = "~/.zplug";
-      #     plugins = [
-      #       {name = "zsh-users/zsh-autosuggestions";} # Simple plugin installation
-      #       {
-      #         name = "romkatv/powerlevel10k";
-      #         tags = [as:theme depth:1];
-      #       } # Installations with additional options. For the list of options, please refer to Zplug README.
-      #     ];
-      #   };
     };
   };
 }
