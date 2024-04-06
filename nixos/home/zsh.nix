@@ -5,6 +5,7 @@
   ...
 }: {
   programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   home-manager.users.f4g4 = {
     programs.zsh = {

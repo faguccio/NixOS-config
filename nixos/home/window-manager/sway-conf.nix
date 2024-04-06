@@ -126,6 +126,8 @@ in {
 
           "${modifier}+Shift+0" = "move container to workspace number 0";
           "${modifier}+0" = "workspace number 0";
+          "${modifier}+Shift+1" = "move container to workspace number 1";
+          "${modifier}+1" = "workspace number 1";
 
           # "${modifier}+Shift+${left}" = "move left";
           # "${modifier}+Shift+${down}" = "move down";
