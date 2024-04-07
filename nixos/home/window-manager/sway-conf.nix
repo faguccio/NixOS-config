@@ -29,6 +29,8 @@ in {
           gsettings set org.gnome.desktop.interface cursor-size 32
         }
         seat seat0 xcursor_theme oreo_white_cursors 32
+
+        workspace 1
       '';
 
       config = rec {
