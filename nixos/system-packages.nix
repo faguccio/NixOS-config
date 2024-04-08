@@ -30,8 +30,11 @@
     grim
     gtk3
     swaylock
-    nix-du
+
     python3
+
+    graphviz
+    nix-du
 
     telegram-desktop
     firefox
