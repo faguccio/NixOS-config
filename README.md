@@ -3,10 +3,6 @@
 Using sway, I'm a stud yeah.
 
 
-## Something about my config
-
-Can't make zsh work right :(
-
 ## Some Nix commands
 
 - `nix-store --optimise`: hardlinks a bunch of stuff, saving memory
