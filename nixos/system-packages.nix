@@ -30,6 +30,7 @@
     grim
     gtk3
     swaylock
+    feh
 
     python3
 

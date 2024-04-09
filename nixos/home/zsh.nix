@@ -16,6 +16,7 @@
       syntaxHighlighting.enable = true;
       shellAliases = {
         ll = "ls -l";
+        sus = "systemctl suspend";
       };
 
       history.size = 10000;
