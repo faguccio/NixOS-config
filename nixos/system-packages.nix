@@ -31,11 +31,9 @@
     gtk3
     swaylock
     feh
+    evince
 
     python3
-
-    graphviz
-    nix-du
 
     telegram-desktop
     firefox
