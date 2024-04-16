@@ -41,6 +41,6 @@
     vscodium
     syncthing
     anki
-    bitwarden-cli
+    bitwarden
   ];
 }
