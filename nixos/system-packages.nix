@@ -30,6 +30,7 @@
     grim
     gtk3
     swaylock
+
     feh
     evince
 
@@ -39,5 +40,6 @@
     firefox
     vscodium
     syncthing
+    anki
   ];
 }
