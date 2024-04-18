@@ -99,6 +99,8 @@
     options = "--delete-older-than 30d";
   };
 
+  programs.nix-ld.enable = true;
+
   # Optimizing storage by hardlinking
   # nix.settings.auto-optimise-store = true;
 
