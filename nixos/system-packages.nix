@@ -35,6 +35,7 @@
     evince
 
     python3
+    python311Packages.pip
 
     telegram-desktop
     firefox
