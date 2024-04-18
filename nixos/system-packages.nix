@@ -42,5 +42,6 @@
     syncthing
     anki
     bitwarden
+    xfce.thunar
   ];
 }
