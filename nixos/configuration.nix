@@ -91,6 +91,7 @@
   '';
 
   programs.light.enable = true;
+  services.blueman.enable = true;
 
   # For garbage colection
   nix.gc = {
