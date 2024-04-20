@@ -44,5 +44,6 @@
     anki
     bitwarden
     xfce.thunar
+    chromium
   ];
 }
