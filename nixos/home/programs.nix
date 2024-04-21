@@ -13,6 +13,11 @@
       userEmail = "faga2703@gmail.com";
     };
 
+    programs.direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
+
     programs.foot = {
       enable = true;
 
