@@ -33,6 +33,7 @@
 
     feh
     evince
+    du-dust
 
     python3
     python311Packages.pip
