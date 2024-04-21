@@ -50,5 +50,6 @@
     pandoc
     tectonic
     xournalpp
+    binutils
   ];
 }
