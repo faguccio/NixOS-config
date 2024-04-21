@@ -46,5 +46,6 @@
     bitwarden
     xfce.thunar
     chromium
+    pandoc
   ];
 }
