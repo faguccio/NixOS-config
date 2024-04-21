@@ -47,5 +47,6 @@
     xfce.thunar
     chromium
     pandoc
+    tectonic
   ];
 }
