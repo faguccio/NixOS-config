@@ -49,5 +49,6 @@
     chromium
     pandoc
     tectonic
+    xournalpp
   ];
 }
