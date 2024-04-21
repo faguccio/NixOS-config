@@ -34,6 +34,7 @@
     feh
     evince
     du-dust
+    trashy
 
     python3
     python311Packages.pip
