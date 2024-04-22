@@ -35,6 +35,7 @@
     evince
     du-dust
     trashy
+    bat
 
     telegram-desktop
     firefox
