@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  config,
+  ...
+}: let
   sium = pkgs.writeShellScriptBin "rebuild-commit" ''
     set -e
     pushd ~/mynix-conf/nixos/
@@ -33,6 +37,13 @@
     # Notify all OK!
     notify-send -e "NixOS Rebuilt OK!" --icon=software-update-available
   '';
+
+  run-thorium = pkgs.writeShellScriptBin "thorium" ''
+    run-appimage ~/appimages/Thorium-2.4.1.AppImage
+  '';
 in {
-  environment.systemPackages = [sium];
+  environment.systemPackages = [
+    sium
+    run-thorium
+  ];
 }
