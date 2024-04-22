@@ -36,9 +36,6 @@
     du-dust
     trashy
 
-    python3
-    python311Packages.pip
-
     telegram-desktop
     firefox
     vscodium

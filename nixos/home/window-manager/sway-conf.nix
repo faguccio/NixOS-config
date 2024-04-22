@@ -127,8 +127,8 @@ in {
           # "${modifier}+Ctrl+${up}" = "move workspace to output up";
           # "${modifier}+Ctrl+${right}" = "move workspace to output right";
 
-          "${modifier}+Shift+0" = "move container to workspace number 0";
-          "${modifier}+0" = "workspace number 0";
+          "${modifier}+Shift+0" = "move container to workspace number 10";
+          "${modifier}+0" = "workspace number 10";
           "${modifier}+Shift+1" = "move container to workspace number 1";
           "${modifier}+1" = "workspace number 1";
 
