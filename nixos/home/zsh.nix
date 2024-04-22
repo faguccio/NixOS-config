@@ -15,7 +15,8 @@
       enableAutosuggestions = true;
       syntaxHighlighting.enable = true;
       shellAliases = {
-        ll = "ls -l";
+        ll = "eza -l";
+        ls = "eza";
         sus = "systemctl suspend";
       };
 

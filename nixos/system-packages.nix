@@ -36,6 +36,7 @@
     du-dust
     trashy
     bat
+    eza
 
     telegram-desktop
     firefox
