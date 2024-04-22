@@ -39,7 +39,7 @@
   '';
 
   run-thorium = pkgs.writeShellScriptBin "thorium" ''
-    run-appimage ~/appimages/Thorium-2.4.1.AppImage
+    appimage-run ~/appimages/Thorium-2.4.1.AppImage
   '';
 in {
   environment.systemPackages = [
