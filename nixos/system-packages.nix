@@ -20,9 +20,6 @@
     wget
     git
 
-    alejandra
-    neofetch
-    htop
     home-manager
     wl-clipboard
     pulseaudio
@@ -37,6 +34,10 @@
     trashy
     bat
     eza
+    appimage-run
+    alejandra
+    neofetch
+    htop
 
     telegram-desktop
     firefox
