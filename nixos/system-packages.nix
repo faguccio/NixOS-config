@@ -49,8 +49,10 @@
     chromium
     pandoc
     tectonic
+
     xournalpp
-    binutils
     gnome.adwaita-icon-theme
+
+    krita
   ];
 }
