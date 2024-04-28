@@ -38,6 +38,7 @@
     alejandra
     neofetch
     htop
+    python3
 
     telegram-desktop
     firefox
