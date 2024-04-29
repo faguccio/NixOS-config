@@ -114,7 +114,7 @@ in {
           "${modifier}+e" = "exec ${firefox}/bin/firefox";
           "${modifier}+o" = "exec ${obsidian}/bin/obsidian";
           "${modifier}+w" = "kill";
-          "${modifier}+l" = "exec swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend";
+          "${modifier}+l" = "exec 'swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend'";
           "${modifier}+space" = "exec wofi -S run";
           # "${modifier}+space" = "exec thunar"
           # # pick color
