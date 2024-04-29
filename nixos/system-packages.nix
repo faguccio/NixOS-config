@@ -50,6 +50,7 @@
     chromium
     pandoc
     tectonic
+    libreoffice-qt
 
     xournalpp
     gnome.adwaita-icon-theme
