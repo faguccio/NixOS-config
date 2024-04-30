@@ -15,6 +15,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
+  services.blueman.enable = true;
+
   environment.systemPackages = with pkgs; [
     vim
     wget
