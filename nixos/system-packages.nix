@@ -44,6 +44,7 @@
     python3
     mpv
     file
+    ffmpeg
 
     telegram-desktop
     firefox
