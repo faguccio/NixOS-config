@@ -42,8 +42,8 @@
     neofetch
     htop
     python3
-    tcptrack
     mpv
+    file
 
     telegram-desktop
     firefox
