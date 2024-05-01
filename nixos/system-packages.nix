@@ -43,6 +43,7 @@
     htop
     python3
     tcptrack
+    mpv
 
     telegram-desktop
     firefox
