@@ -42,6 +42,7 @@
     neofetch
     htop
     python3
+    tcptrack
 
     telegram-desktop
     firefox
