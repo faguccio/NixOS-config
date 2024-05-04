@@ -41,9 +41,14 @@
   run-thorium = pkgs.writeShellScriptBin "thorium" ''
     appimage-run ~/appimages/Thorium-2.4.1.AppImage
   '';
+
+  bluetooth-connect = pkgs.writeShellScriptBin "bcon" ''
+    echo 'connect 9C:49:52:19:3C:0B' | bluetoothctl
+  '';
 in {
   environment.systemPackages = [
     sium
     run-thorium
+    bluetooth-connect
   ];
 }
