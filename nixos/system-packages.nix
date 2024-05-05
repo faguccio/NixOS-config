@@ -57,6 +57,7 @@
     pandoc
     tectonic
     libreoffice-qt
+    obs-studio
 
     xournalpp
     gnome.adwaita-icon-theme
