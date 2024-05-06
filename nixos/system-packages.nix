@@ -45,6 +45,8 @@
     mpv
     file
     ffmpeg
+    zip
+    unzip
 
     telegram-desktop
     firefox
