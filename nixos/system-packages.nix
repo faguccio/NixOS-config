@@ -46,7 +46,6 @@
     ffmpeg
     zip
     unzip
-    cope
 
     python3
 
