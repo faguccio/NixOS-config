@@ -41,12 +41,13 @@
     alejandra
     neofetch
     htop
-    python3
     mpv
     file
     ffmpeg
     zip
     unzip
+
+    python3
 
     telegram-desktop
     firefox

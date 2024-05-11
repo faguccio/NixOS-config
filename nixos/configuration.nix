@@ -73,6 +73,7 @@
       "libvirtd"
       "vboxusers"
       "wireshark"
+      "plugdev"
     ];
     packages = with pkgs; [];
   };
