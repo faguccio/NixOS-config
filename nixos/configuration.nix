@@ -106,6 +106,11 @@
 
   programs.nix-ld.enable = true;
 
+  services.udev.extraRules = ''
+    # Your rule goes here
+    SUBSYSTEM=="usb", ATTR{idVendor}=="2717", ATTR{idProduct}=="ff48", MODE="0666", GROUP="plugdev"
+  '';
+
   # Optimizing storage by hardlinking
   # nix.settings.auto-optimise-store = true;
 
