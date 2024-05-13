@@ -51,7 +51,8 @@
 
     telegram-desktop
     firefox
-    vscodium
+    #vscodium
+    vscodium.fhs
     syncthing
     anki
     bitwarden
