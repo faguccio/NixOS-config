@@ -69,14 +69,14 @@
     krita
   ];
 
-  # programs.firefox = {
-  #   package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
-  #     forcewayland = true;
-  #     extrapolicies = {
-  #       extensionsettings = {};
-  #     };
-  #   };
-  # };
+  programs.firefox = {
+    package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
+      forcewayland = true;
+      extrapolicies = {
+        extensionsettings = {};
+      };
+    };
+  };
 
   # FOR SWAY
   xdg = {
@@ -84,14 +84,19 @@
       enable = true;
       extraPortals = with pkgs; [
         xdg-desktop-portal-wlr
-        xdg-desktop-portal
-        pipewire
-        wireplumber
+        xdg-desktop-portal-gtk
       ];
+      gtkUsePortal = true;
     };
   };
-  # xdg.portal = {
+
+  # programs.firefox = {
   #   enable = true;
-  #   wlr.enable = true;
+  #   package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
+  #     forceWayland = true;
+  #     extraPolicies = {
+  #       ExtensionSettings = {};
+  #     };
+  #   };
   # };
 }
