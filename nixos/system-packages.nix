@@ -69,18 +69,17 @@
     krita
   ];
 
-  programs.firefox = {
-    package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
-      forcewayland = true;
-      extrapolicies = {
-        extensionsettings = {};
-      };
-    };
-  };
+  # programs.firefox = {
+  #   package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
+  #     forcewayland = true;
+  #     extrapolicies = {
+  #       extensionsettings = {};
+  #     };
+  #   };
+  # };
 
   xdg.portal = {
     enable = true;
     wlr.enable = true;
   };
-  #exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 }

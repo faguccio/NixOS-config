@@ -31,6 +31,8 @@ in {
         seat seat0 xcursor_theme oreo_white_cursors 32
 
         workspace 1
+
+        exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
       '';
 
       config = rec {
