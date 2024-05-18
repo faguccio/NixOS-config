@@ -111,6 +111,18 @@
     SUBSYSTEM=="usb", ATTR{idVendor}=="2717", ATTR{idProduct}=="ff48", MODE="0666", GROUP="plugdev"
   '';
 
+  # FOR SWAY
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
+      ];
+      gtkUsePortal = true;
+    };
+  };
+
   # Optimizing storage by hardlinking
   # nix.settings.auto-optimise-store = true;
 

@@ -30,10 +30,6 @@
     grim
     gtk3
     swaylock
-    xdg-desktop-portal
-    xdg-desktop-portal-wlr
-    pipewire
-    wireplumber
 
     feh
     evince
