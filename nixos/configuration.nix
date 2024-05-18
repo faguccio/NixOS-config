@@ -112,17 +112,17 @@
   '';
 
   # FOR SWAY
-  xdg = {
-    portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-        xdg-desktop-portal
-        pipewire
-        wireplumber
-      ];
-    };
-  };
+  # xdg = {
+  #   portal = {
+  #     enable = true;
+  #     extraPortals = with pkgs; [
+  #       xdg-desktop-portal-wlr
+  #       xdg-desktop-portal
+  #       pipewire
+  #       wireplumber
+  #     ];
+  #   };
+  # };
 
   # Optimizing storage by hardlinking
   # nix.settings.auto-optimise-store = true;
