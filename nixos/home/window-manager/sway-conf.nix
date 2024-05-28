@@ -30,20 +30,34 @@ in {
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
       enable = true;
+
       extraConfig = ''
-        font pango:monospace 0
-        output * bg ~/Pictures/background.jpg stretch
 
-        exec swaymsg output eDP-1 scale 1
 
-        exec_always {
-          gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
-          gsettings set org.gnome.desktop.interface cursor-size 32
-        }
-        seat seat0 xcursor_theme oreo_white_cursors 32
+        # Mouse
 
-        workspace 1
+          font pango:monospace 0
+          output * bg ~/Pictures/background.jpg stretch
 
+          exec swaymsg output eDP-1 scale 1
+
+          # exec_always {
+          #   gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
+          #   gsettings set org.gnome.desktop.interface cursor-size 32
+          # }
+
+          set $gnome-schema org.gnome.desktop.interface
+          exec_always {
+                gsettings set $gnome-schema gtk-theme 'Matcha-dark-sea'
+                gsettings set $gnome-schema icon-theme 'Numix-Square'
+                gsettings set org.gnome.desktop.interface text-scaling-factor 2.73
+                gsettings set org.gnome.desktop.interface cursor-size $cursor_size
+            }
+
+          #seat seat0 xcursor_theme oreo_white_cursors 32
+          seat seat0 xcursor_theme breeze 54
+
+          workspace 1
 
       '';
 
