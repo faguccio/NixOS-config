@@ -69,14 +69,14 @@
     krita
   ];
 
-  programs.firefox = {
-    package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
-      forcewayland = true;
-      extrapolicies = {
-        extensionsettings = {};
-      };
-    };
-  };
+  # programs.firefox = {
+  #   package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
+  #     forcewayland = true;
+  #     extrapolicies = {
+  #       extensionsettings = {};
+  #     };
+  #   };
+  # };
 
   # FOR SWAY
   xdg = {
