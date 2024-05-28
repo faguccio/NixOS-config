@@ -43,14 +43,14 @@ in {
 
           exec swaymsg output eDP-1 scale 1.1
 
-          exec_always {
-            gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
-            gsettings set org.gnome.desktop.interface cursor-size 32
-              gsettings set org.gnome.desktop.interface text-scaling-factor 1.1
-          }
+          # exec_always {
+          #   gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
+          #   gsettings set org.gnome.desktop.interface cursor-size 52
+          #     gsettings set org.gnome.desktop.interface text-scaling-factor 1.1
+          # }
 
 
-          seat seat0 xcursor_theme oreo_white_cursors 32
+          seat seat0 xcursor_theme oreo_white_cursors 52
 
           workspace 1
 
