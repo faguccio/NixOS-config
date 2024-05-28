@@ -41,7 +41,7 @@ in {
 
           set $gnome-schema org.gnome.desktop.interface
 
-          exec swaymsg output eDP-1 scale 1.5
+          exec swaymsg output eDP-1 scale 2
 
           exec_always {
             gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
