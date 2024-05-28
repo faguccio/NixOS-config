@@ -39,23 +39,18 @@ in {
           font pango:monospace 0
           output * bg ~/Pictures/background.jpg stretch
 
-          exec swaymsg output eDP-1 scale 1
-
-          # exec_always {
-          #   gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
-          #   gsettings set org.gnome.desktop.interface cursor-size 32
-          # }
-
           set $gnome-schema org.gnome.desktop.interface
-          exec_always {
-                gsettings set $gnome-schema gtk-theme 'Matcha-dark-sea'
-                gsettings set $gnome-schema icon-theme 'Numix-Square'
-                gsettings set org.gnome.desktop.interface text-scaling-factor 2.73
-                gsettings set org.gnome.desktop.interface cursor-size $cursor_size
-            }
 
-          #seat seat0 xcursor_theme oreo_white_cursors 32
-          seat seat0 xcursor_theme breeze 54
+          exec swaymsg output eDP-1 scale 1.2
+
+          exec_always {
+            gsettings set org.gnome.desktop.interface cursor-theme oreo_white_cursors
+            gsettings set org.gnome.desktop.interface cursor-size 32
+              gsettings set org.gnome.desktop.interface text-scaling-factor 2.73
+          }
+
+
+          seat seat0 xcursor_theme oreo_white_cursors 32
 
           workspace 1
 
