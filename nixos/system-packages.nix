@@ -69,16 +69,7 @@
     krita
   ];
 
-  # programs.firefox = {
-  #   package = pkgs.wrapfirefox pkgs.firefox-unwrapped {
-  #     forcewayland = true;
-  #     extrapolicies = {
-  #       extensionsettings = {};
-  #     };
-  #   };
-  # };
-
-  # FOR SWAY
+  # Screen capture on wayland :)
   xdg = {
     portal = {
       enable = true;
@@ -89,14 +80,4 @@
       gtkUsePortal = true;
     };
   };
-
-  # programs.firefox = {
-  #   enable = true;
-  #   package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
-  #     forceWayland = true;
-  #     extraPolicies = {
-  #       ExtensionSettings = {};
-  #     };
-  #   };
-  # };
 }
