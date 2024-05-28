@@ -15,6 +15,18 @@ with pkgs; let
 in {
   security.pam.services.swaylock = {};
 
+  # Screen capture on wayland :)
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
+      ];
+      gtkUsePortal = true;
+    };
+  };
+
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
       enable = true;

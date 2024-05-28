@@ -67,17 +67,6 @@
     gnome.adwaita-icon-theme
 
     krita
+    libsForQt5.okular
   ];
-
-  # Screen capture on wayland :)
-  xdg = {
-    portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk
-      ];
-      gtkUsePortal = true;
-    };
-  };
 }
