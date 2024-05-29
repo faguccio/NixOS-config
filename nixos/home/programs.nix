@@ -7,6 +7,20 @@
     home.packages = with pkgs; [
     ];
 
+    nixpkgs.config.allowUnfreePredicate = pkg:
+      builtins.elem (lib.getName pkg) [
+        # Add additional package names here
+        "vscode"
+      ];
+
+    programs.vscode = {
+      enable = true;
+      extensions = with pkgs.vscode-extensions; [
+        dracula-theme.theme-dracula
+        yzhang.markdown-all-in-one
+      ];
+    };
+
     programs.git = {
       enable = true;
       userName = "Fabio Gaiba";
