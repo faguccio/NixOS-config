@@ -47,6 +47,8 @@
     zip
     unzip
 
+    traceroute
+
     python3
 
     telegram-desktop
