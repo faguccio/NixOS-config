@@ -48,6 +48,7 @@
     unzip
 
     traceroute
+    dig
 
     python3
 
