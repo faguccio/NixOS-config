@@ -70,6 +70,5 @@
     gnome.adwaita-icon-theme
 
     krita
-    libsForQt5.okular
   ];
 }
