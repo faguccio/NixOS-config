@@ -49,6 +49,7 @@
 
     traceroute
     dig
+    tor-browser-bundle-bin
 
     python3
 
