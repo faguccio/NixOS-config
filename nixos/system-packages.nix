@@ -46,6 +46,7 @@
     ffmpeg
     zip
     unzip
+    gnumake
 
     traceroute
     dig
