@@ -47,6 +47,7 @@
     zip
     unzip
     gnumake
+    killall
 
     traceroute
     dig
