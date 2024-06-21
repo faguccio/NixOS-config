@@ -29,10 +29,10 @@ in {
         position = "top";
         height = 34;
         spacing = 0;
-        output = [
-          "eDP-1"
-          "HDMI-A-1"
-        ];
+        # output = [
+        #   "eDP-1"
+        #   "HDMI-A-1"
+        # ];
         modules-left = [
           "sway/workspaces"
           "sway/mode"
