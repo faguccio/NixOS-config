@@ -7,6 +7,8 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  environment.variables.EDITOR = "vim";
+
   home-manager.users.f4g4 = {
     programs.zsh = {
       enable = true;

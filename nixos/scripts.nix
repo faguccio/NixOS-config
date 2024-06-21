@@ -37,7 +37,7 @@
     popd
 
     # Notify all OK!
-    notify-send -e "NixOS Rebuilt OK!" --icon=software-update-available
+    # notify-send -e "NixOS Rebuilt OK!" --icon=software-update-available
   '';
 
   run-thorium = pkgs.writeShellScriptBin "thorium" ''
