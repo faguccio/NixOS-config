@@ -121,6 +121,7 @@ in {
           # "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
           # # rofi: password store
           "${modifier}+e" = "exec ${firefox}/bin/firefox";
+          "${modifier}+n" = "exec thunar";
           "${modifier}+o" = "exec ${obsidian}/bin/obsidian";
           "${modifier}+w" = "kill";
           "${modifier}+l" = "exec 'swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend'";

@@ -1,6 +1,6 @@
 # My NixOS Conf
 
-Using sway, I'm a stud yeah.
+Using sway, I'm a stud I know.
 
 
 ## Some Nix commands
