@@ -18,6 +18,9 @@
   services.blueman.enable = true;
   virtualisation.docker.enable = true;
 
+  # Just for a dumb project
+  programs.wireshark.enable = true;
+
   environment.systemPackages = with pkgs; [
     vim
     wget
