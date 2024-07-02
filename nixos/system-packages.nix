@@ -22,8 +22,6 @@
   programs.wireshark.enable = true;
 
   environment.systemPackages = with pkgs; [
-    wireshark
-
     vim
     wget
     git
