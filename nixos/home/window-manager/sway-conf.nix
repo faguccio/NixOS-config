@@ -160,8 +160,8 @@ in {
           "XF86AudioMute" = "exec pactl set-sink-mute 0 toggle";
 
           # brightness
-          "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 2";
-          "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 2";
+          "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 5";
+          "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 5";
         };
       };
     };
