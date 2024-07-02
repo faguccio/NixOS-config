@@ -20,7 +20,7 @@
 
   # Just for a dumb project
   programs.wireshark.enable = true;
-
+  programs.wireshark.package = pkgs.wireshark;
   environment.systemPackages = with pkgs; [
     vim
     wget
