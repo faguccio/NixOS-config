@@ -45,6 +45,7 @@
     alejandra
     neofetch
     htop
+    nethogs
     mpv
     file
     ffmpeg
