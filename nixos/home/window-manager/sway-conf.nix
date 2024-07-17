@@ -127,6 +127,7 @@ in {
           "${modifier}+l" = "exec 'swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend'";
           "${modifier}+space" = "exec wofi -S run";
           "${modifier}+m" = "exec ${light}/bin/light -S 1";
+          "${modifier}+j" = "exec ${light}/bin/light -S 80";
 
           # "${modifier}+space" = "exec thunar"
           # # pick color
