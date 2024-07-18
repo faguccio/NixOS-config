@@ -45,6 +45,7 @@
     alejandra
     neofetch
     htop
+    btop
     nethogs
     mpv
     file
