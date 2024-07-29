@@ -128,6 +128,7 @@ in {
           "${modifier}+space" = "exec wofi -S run";
           "${modifier}+m" = "exec ${light}/bin/light -S 1";
           "${modifier}+j" = "exec ${light}/bin/light -S 80";
+          "${modifier}+b" = "exec ${light}/bin/light -s sysfs/leds/tpacpi::kbd_backlight -S 50";
 
           # "${modifier}+space" = "exec thunar"
           # # pick color

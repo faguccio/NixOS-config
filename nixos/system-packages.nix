@@ -46,7 +46,7 @@
     neofetch
     htop
     btop
-    thinkfan
+
     nethogs
     mpv
     file
