@@ -67,7 +67,7 @@
     #vscodium
     vscodium.fhs
     syncthing
-    anki
+    anki-bin
     bitwarden
     xfce.thunar
     chromium
