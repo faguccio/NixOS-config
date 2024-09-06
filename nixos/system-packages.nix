@@ -3,13 +3,26 @@
   pkgs,
   lib,
   ...
-}: {
-  # Allow unfree packages
-  nixpkgs = {
-    config.allowUnfree = true;
-    config.permittedInsecurePackages = [
+}: let
+  unstableTarball =
+    fetchTarball
+    https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz;
+in {
+  imports = [
+    # Include the results of the hardware scan.
+    /etc/nixos/hardware-configuration.nix
+  ];
+
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
       "electron-25.9.0"
     ];
+    packageOverrides = pkgs: {
+      unstable = import unstableTarball {
+        config = config.nixpkgs.config;
+      };
+    };
   };
 
   # List packages installed in system profile. To search, run:
@@ -64,10 +77,10 @@
 
     telegram-desktop
     firefox
+    unstable.anki-bin
     #vscodium
     vscodium.fhs
     syncthing
-    anki-bin
     bitwarden
     xfce.thunar
     chromium
