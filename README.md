@@ -14,8 +14,8 @@ Using sway, I'm a stud I know.
 - `nixos-rebuild switch --upgrade`
     - same as `nix-channel --update nixos; nixos-rebuild switch`
 
-https://nixos.org/manual/nixos/stable/index.html#sec-upgrading
+[More on upgrading](https://nixos.org/manual/nixos/stable/index.html#sec-upgrading)
 
-## Not to forget
+## Not to forget 
 
 You can install programs with `environment.systemPackages = with pkgs; [ sium ];` but whenever possible `programs.sium.enable = true` which will both install the program and provide some systemwide configuration.

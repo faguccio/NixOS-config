@@ -32,9 +32,7 @@ in {
       enable = true;
 
       extraConfig = ''
-        font pango:monospace 0
         output * bg ~/Pictures/background.jpg stretch
-
 
         workspace 1
 
@@ -54,7 +52,14 @@ in {
           }
         ];
       };
+
       config = {
+        window = {
+          hideEdgeBorders = "smart";
+          border = 2;
+          titlebar = false;
+        };
+
         input = {
           # trackpad config
           "type:touchpad" = {
