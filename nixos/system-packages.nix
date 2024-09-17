@@ -17,6 +17,7 @@ in {
     allowUnfree = true;
     permittedInsecurePackages = [
       "electron-25.9.0"
+      "electron-27.3.11"
     ];
     packageOverrides = pkgs: {
       unstable = import unstableTarball {
@@ -88,6 +89,7 @@ in {
     tectonic
     libreoffice-qt
     obs-studio
+    logseq
 
     xournalpp
     gnome.adwaita-icon-theme
