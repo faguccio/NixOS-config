@@ -92,8 +92,8 @@ in {
     firefox
     unstable.anki-bin
     #vscodium
-    vscode.fhs
-    vscodium.fhs
+    # vscode.fhs
+    # vscodium.fhs
 
     syncthing
     bitwarden
