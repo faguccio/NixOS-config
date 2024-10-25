@@ -22,7 +22,10 @@
     #   ];
     # };
 
-    programs.vscode.package = pkgs.vscode.fhsWithPackages (ps: with ps; [rustup zlib openssl.dev pkg-config]);
+    programs.vscode = {
+      enable = true;
+      package = pkgs.vscode.fhsWithPackages (ps: with ps; [rustup zlib openssl.dev pkg-config]);
+    };
 
     programs.git = {
       enable = true;
