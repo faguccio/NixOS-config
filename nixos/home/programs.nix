@@ -13,14 +13,14 @@
         "vscode"
       ];
 
-    programs.vscode = {
-      enable = true;
-      extensions = with pkgs.vscode-extensions; [
-        rust-lang.rust-analyzer
-        dracula-theme.theme-dracula
-        yzhang.markdown-all-in-one
-      ];
-    };
+    # programs.vscode = {
+    #   enable = true;
+    #   extensions = with pkgs.##vscode-extensions; [
+    #     rust-lang.rust-analyzer
+    #     dracula-theme.theme-dracula
+    #     yzhang.markdown-all-in-one
+    #   ];
+    # };
 
     programs.git = {
       enable = true;

@@ -92,7 +92,7 @@ in {
     firefox
     unstable.anki-bin
     #vscodium
-    # vscode.fhs
+    vscode.fhs
     # vscodium.fhs
 
     syncthing
