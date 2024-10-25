@@ -7,18 +7,6 @@
   unstableTarball =
     fetchTarball
     https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz;
-  # system = builtins.currentSystem;
-  # extensions =
-  #   (import (builtins.fetchGit {
-  #     url = "https://github.com/nix-community/nix-vscode-extensions";
-  #     ref = "refs/heads/master";
-  #     rev = "c43d9089df96cf8aca157762ed0e2ddca9fcd71e";
-  #   }))
-  #   .extensions
-  #   .${system};
-  # extensionsList = with extensions.vscode-marketplace; [
-  #   rust-lang.rust-analyzer
-  # ];
 in {
   imports = [
     # Include the results of the hardware scan.
@@ -93,6 +81,7 @@ in {
     unstable.anki-bin
     #vscodium
     vscode.fhs
+
     # vscodium.fhs
 
     syncthing
