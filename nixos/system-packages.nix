@@ -81,6 +81,7 @@ in {
     unstable.anki-bin
     #vscodium
     #vscode.fhs
+    hoppscotch
 
     # vscodium.fhs
 
