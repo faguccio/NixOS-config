@@ -31,6 +31,7 @@
       enable = true;
       userName = "Fabio Gaiba";
       userEmail = "faga2703@gmail.com";
+      lfs.enable = true;
     };
 
     programs.direnv = {
