@@ -98,7 +98,7 @@
   services.blueman.enable = true;
 
   services.openvpn.servers = {
-    officeVPN = {config = ''config ~/iwb-vpn-studierende.ovpn '';};
+    idpVPN = {config = ''config ~/iwb-vpn-studierende.ovpn '';};
   };
 
   # For garbage colection
