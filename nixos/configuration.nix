@@ -97,6 +97,10 @@
   hardware.bluetooth.powerOnBoot = true; #
   services.blueman.enable = true;
 
+  services.openvpn.servers = {
+    officeVPN = {config = ''config ~/iwb-vpn-studierende.ovpn '';};
+  };
+
   # For garbage colection
   nix.gc = {
     automatic = true;
