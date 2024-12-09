@@ -73,7 +73,7 @@ in {
     traceroute
     dig
     tor-browser-bundle-bin
-    openvpn3
+    pritunl-client
 
     python3
 
