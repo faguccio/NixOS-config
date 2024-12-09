@@ -35,6 +35,7 @@ in {
   # Just for a dumb project
   programs.wireshark.enable = true;
   programs.wireshark.package = pkgs.wireshark;
+  programs.openvpn3.enable = true;
 
   environment.systemPackages = with pkgs; [
     vim
@@ -73,7 +74,6 @@ in {
     traceroute
     dig
     tor-browser-bundle-bin
-    pritunl-client
 
     python3
 
