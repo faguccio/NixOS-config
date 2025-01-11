@@ -48,6 +48,7 @@ in {
     grim
     gtk3
     swaylock
+    xdg_utils
 
     feh
     evince
