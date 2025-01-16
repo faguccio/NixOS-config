@@ -91,6 +91,8 @@ in {
     bitwarden
     xfce.thunar
     chromium
+    # for netflix and language reactor :(
+    google-chrome
     pandoc
     tectonic
     libreoffice-qt
