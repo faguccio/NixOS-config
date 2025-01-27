@@ -79,6 +79,7 @@ in {
     python3
 
     telegram-desktop
+    signal-desktop
     firefox
     unstable.anki-bin
     #vscodium
