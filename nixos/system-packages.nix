@@ -85,6 +85,7 @@ in {
     #vscodium
     #vscode.fhs
     hoppscotch
+    pavucontrol
 
     # vscodium.fhs
 
