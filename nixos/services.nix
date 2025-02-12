@@ -13,6 +13,12 @@
     pulse.enable = true;
   };
 
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
+
   services.syncthing = let
     user = "f4g4";
   in {
