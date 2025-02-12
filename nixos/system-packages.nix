@@ -57,7 +57,7 @@ in {
     alejandra
     neofetch
     htop
-    gnome.seahorse
+    pinentry-curses
     btop
 
     nethogs

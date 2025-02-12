@@ -16,7 +16,7 @@
   services.pcscd.enable = true;
   programs.gnupg.agent = {
     enable = true;
-    pinentryPackage = pkgs.gnome.seahorse;
+    pinentryPackage = pkgs.pinentry-curses;
     enableSSHSupport = true;
   };
 
