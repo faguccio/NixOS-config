@@ -5,6 +5,7 @@
 }: {
   home-manager.users.f4g4 = {
     home.packages = with pkgs; [
+      gnupg
     ];
 
     nixpkgs.config.allowUnfreePredicate = pkg:

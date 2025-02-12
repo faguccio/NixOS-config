@@ -36,6 +36,8 @@ in {
   programs.wireshark.enable = true;
   programs.wireshark.package = pkgs.wireshark;
 
+  services.dbus.packages = [pkgs.gcr];
+
   environment.systemPackages = with pkgs; [
     vim
     wget
