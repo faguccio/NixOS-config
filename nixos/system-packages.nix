@@ -57,6 +57,7 @@ in {
     alejandra
     neofetch
     htop
+    pinentry-curses
     btop
 
     nethogs
