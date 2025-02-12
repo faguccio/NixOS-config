@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
   sound.enable = false;
@@ -16,6 +16,7 @@
   services.pcscd.enable = true;
   programs.gnupg.agent = {
     enable = true;
+    pinentryPackage = pkgs.gnome.seahorse;
     enableSSHSupport = true;
   };
 
