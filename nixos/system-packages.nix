@@ -26,17 +26,12 @@ in {
     };
   };
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-
   services.blueman.enable = true;
   virtualisation.docker.enable = true;
 
   # Just for a dumb project
   programs.wireshark.enable = true;
   programs.wireshark.package = pkgs.wireshark;
-
-  services.dbus.packages = [pkgs.gcr];
 
   environment.systemPackages = with pkgs; [
     vim
@@ -102,7 +97,6 @@ in {
     libreoffice-qt
     obs-studio
     logseq
-    gnupg
 
     xournalpp
     gnome.adwaita-icon-theme
