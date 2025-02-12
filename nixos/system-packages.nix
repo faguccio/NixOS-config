@@ -100,6 +100,7 @@ in {
     libreoffice-qt
     obs-studio
     logseq
+    gnupg
 
     xournalpp
     gnome.adwaita-icon-theme
