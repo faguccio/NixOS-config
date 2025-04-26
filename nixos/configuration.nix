@@ -74,6 +74,7 @@
       "vboxusers"
       "wireshark"
       "plugdev"
+      "kvm"
     ];
     packages = with pkgs; [];
   };
@@ -96,6 +97,10 @@
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; #
   services.blueman.enable = true;
+
+  # Enable KVM virtualization
+  boot.kernelModules = ["kvm" "kvm-intel"];
+  virtualisation.libvirtd.enable = true;
 
   # For garbage colection
   nix.gc = {

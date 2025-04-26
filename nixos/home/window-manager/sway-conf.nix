@@ -36,6 +36,8 @@ in {
 
         workspace 1
 
+        # swaymsg input "1267:47:Elan_TrackPointw" events disabled
+
       '';
 
       #exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
