@@ -28,6 +28,10 @@
       package = pkgs.vscode.fhsWithPackages (ps: with ps; [rustup zlib openssl.dev pkg-config]);
     };
 
+    programs.helix = {
+      package = pkgs.helix;
+    };
+
     programs.git = {
       enable = true;
       userName = "Fabio Gaiba";
