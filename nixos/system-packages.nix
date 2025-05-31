@@ -103,5 +103,6 @@ in {
     gnome.adwaita-icon-theme
 
     krita
+    ollama
   ];
 }
