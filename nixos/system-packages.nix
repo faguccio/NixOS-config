@@ -103,6 +103,6 @@ in {
     gnome.adwaita-icon-theme
 
     krita
-    ollama
+    unstable.ollama
   ];
 }
