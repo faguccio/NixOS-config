@@ -20,7 +20,7 @@
         ll = "eza -l";
         ls = "eza";
         sus = "systemctl suspend";
-        gs = "git status";
+        gis = "git status";
         gc = "git commit";
         gpl = "git pull";
         gps = "git push";
