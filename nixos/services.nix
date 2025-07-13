@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   security.rtkit.enable = true;
   hardware.pulseaudio.enable = false;
-  sound.enable = false;
 
   services.pipewire = {
     enable = true;

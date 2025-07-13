@@ -45,7 +45,7 @@ in {
     grim
     gtk3
     swaylock
-    xdg_utils
+    xdg-utils
 
     feh
     evince
@@ -100,7 +100,7 @@ in {
     logseq
 
     xournalpp
-    gnome.adwaita-icon-theme
+    adwaita-icon-theme
 
     krita
     unstable.ollama

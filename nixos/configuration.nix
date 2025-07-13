@@ -86,7 +86,6 @@
   security.polkit.enable = true;
 
   hardware.opengl.enable = true;
-  hardware.opengl.driSupport = true;
 
   environment.loginShellInit = ''
     [[ "$(tty)" == /dev/tty1 ]] && sway

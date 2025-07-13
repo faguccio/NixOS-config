@@ -23,16 +23,16 @@ in {
         xdg-desktop-portal-wlr
         xdg-desktop-portal-gtk
       ];
-      gtkUsePortal = true;
     };
   };
 
+  environment.systemPackages = with pkgs; [swaybg];
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
       enable = true;
 
       extraConfig = ''
-        output * bg ~/Pictures/background.jpg stretch
+        exec_always swaybg -i /home/f4g4/Pictures/background.jpg -m fill
 
         workspace 1
 
