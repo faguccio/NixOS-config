@@ -62,6 +62,13 @@ in {
           titlebar = false;
         };
 
+        output = {
+          "DP-2" = {
+            scale = "1.25";
+            transform = "normal";
+          };
+        };
+
         input = {
           # trackpad config
           "type:touchpad" = {
