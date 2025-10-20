@@ -93,14 +93,14 @@ in {
     chromium
     # for netflix and language reactor :(
     google-chrome
-    pandoc
-    tectonic
     libreoffice-qt
     obs-studio
     logseq
 
     xournalpp
     adwaita-icon-theme
+
+    jetbrains.pycharm-professional
 
     krita
     unstable.ollama
