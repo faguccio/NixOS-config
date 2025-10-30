@@ -136,6 +136,15 @@
   # Optimizing storage by hardlinking
   nix.settings.auto-optimise-store = true;
 
+  ### Power Management
+  hardware.intel-gpu-tools.enable = true;
+
+  powerManagement = {
+    enable = true;
+    powertop.enable = true;
+    cpuFreqGovernor = "schedutil"; #power, performance, ondemand
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
