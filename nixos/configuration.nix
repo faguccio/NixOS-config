@@ -115,24 +115,6 @@
     SUBSYSTEM=="usb", ATTR{idVendor}=="2717", ATTR{idProduct}=="ff48", MODE="0666", GROUP="plugdev"
   '';
 
-  # services = {
-  #   thinkfan = {
-  #     enable = true;
-  #     levels = [
-  #       [0 0 43]
-  #       [1 35 45]
-  #       [2 38 48]
-  #       [3 42 53]
-  #       [4 45 58]
-  #       [5 48 62]
-  #       [6 51 65]
-  #       [7 54 68]
-  #       [8 56 70]
-  #       [9 58 999]
-  #     ];
-  #   };
-  # };
-
   # Optimizing storage by hardlinking
   nix.settings.auto-optimise-store = true;
 
@@ -142,7 +124,7 @@
   powerManagement = {
     enable = true;
     powertop.enable = true;
-    cpuFreqGovernor = "schedutil"; #power, performance, ondemand
+    cpuFreqGovernor = "ondemand"; #power, performance, ondemand
   };
 
   # Some programs need SUID wrappers, can be configured further or are
