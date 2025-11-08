@@ -101,6 +101,7 @@ in {
     adwaita-icon-theme
 
     jetbrains.pycharm-professional
+    jetbrains.webstorm
 
     krita
     unstable.ollama
