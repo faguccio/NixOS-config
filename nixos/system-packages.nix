@@ -59,6 +59,7 @@ in {
     htop
     pinentry-curses
     btop
+    lazygit
 
     nethogs
     mpv
