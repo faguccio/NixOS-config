@@ -69,6 +69,7 @@ in {
     unzip
     gnumake
     killall
+    obsidian
 
     traceroute
     dig
