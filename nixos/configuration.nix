@@ -50,8 +50,8 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -85,7 +85,7 @@
   # For sway
   security.polkit.enable = true;
 
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   environment.loginShellInit = ''
     [[ "$(tty)" == /dev/tty1 ]] && sway

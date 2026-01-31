@@ -14,7 +14,7 @@
       enable = true;
 
       enableCompletion = true;
-      enableAutosuggestions = true;
+      autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
       shellAliases = {
         ll = "eza -l";
@@ -29,7 +29,7 @@
       history.size = 10000;
       historySubstringSearch.enable = true;
       #history.path = "${config.xdg.dataHome}/zsh/history";
-      initExtra = ''
+      initContent = ''
         if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
           source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
         fi
