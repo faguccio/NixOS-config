@@ -80,7 +80,7 @@
           alternate-scroll-mode = "yes";
         };
 
-        colors = {
+        colors-dark = {
           alpha = 1.0;
 
           background = "282828";
