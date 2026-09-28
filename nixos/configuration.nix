@@ -20,6 +20,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.loader.systemd-boot.configurationLimit = 1;
+
   networking.hostName = "Gesicht"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -116,10 +118,15 @@
   '';
 
   # Optimizing storage by hardlinking
-  nix.settings.auto-optimise-store = true;
+  nix.settings = {
+    auto-optimise-store = true;
+    max-jobs = 2;
+    cores = 4;
+  };
 
   ### Power Management
   hardware.intel-gpu-tools.enable = true;
+  hardware.graphics.enable32Bit = true;
 
   powerManagement = {
     enable = true;

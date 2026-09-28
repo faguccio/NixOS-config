@@ -138,10 +138,10 @@ in {
           "${modifier}+n" = "exec thunar";
           "${modifier}+o" = "exec ${obsidian}/bin/obsidian";
           "${modifier}+w" = "kill";
-          "${modifier}+l" = "exec 'swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend'";
+          "${modifier}+semicolon" = "exec 'swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend'";
           "${modifier}+space" = "exec wofi -S run";
           "${modifier}+m" = "exec ${light}/bin/light -S 1";
-          "${modifier}+j" = "exec ${light}/bin/light -S 80";
+          "${modifier}+comma" = "exec ${light}/bin/light -S 80";
           "${modifier}+b" = "exec ${light}/bin/light -s sysfs/leds/tpacpi::kbd_backlight -S 50";
 
           # "${modifier}+space" = "exec thunar"

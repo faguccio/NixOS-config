@@ -7,30 +7,34 @@
     set -e
     pushd ~/mynix-conf/nixos/
 
-    # Early return if no changes were detected (thanks @singiamtel!)
-    if git diff --quiet '*.nix'; then
+    # Check any changes (tracked or untracked)
+    if git diff --quiet -- '*.nix' && git diff --cached --quiet -- '*.nix' \
+    && [ -z "$(git ls-files --others --exclude-standard -- '*.nix')" ]; then
         echo "No changes detected, exiting."
         popd
         exit 0
     fi
 
+
     alejandra . &>/dev/null \
-      || ( alejandra . ; echo "formatting failed!" && exit 1)
+        || ( alejandra . ; echo "formatting failed!" && exit 1)
 
     # Shows your changes
-    git diff -U0 '*.nix'
+    git diff -U0 -- '*.nix'
 
     echo "NixOS Rebuilding..."
 
     # Rebuild, output simplified errors, log trackebacks
-    sudo nixos-rebuild switch &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+    sudo nixos-rebuild switch &>nixos-switch.log || { grep --color error nixos-switch.log; exit 1; }
 
-    # Get current generation metadata
-    current=$(nixos-rebuild list-generations | grep current)
+    current=$(nixos-rebuild list-generations | awk '$NF == "True" {
+        print "gen " $1 " (" $2 " " $3 ")"; exit
+    }')
+    [ -z "$current" ] && current="rebuild $(date -Iseconds)"
 
     # Commit all changes witih the generation metadata
-    git add .
-    git commit -am "$current"
+    git add -A
+    git commit -m "$current"
     git push
 
     # Back to where you were

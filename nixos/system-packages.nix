@@ -16,8 +16,7 @@ in {
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = [
-      "electron-25.9.0"
-      "electron-27.3.11"
+      "electron-39.8.10"
     ];
     packageOverrides = pkgs: {
       unstable = import unstableTarball {
@@ -26,8 +25,21 @@ in {
     };
   };
 
+  #   programs.steam = {
+  #     enable = true;
+  #     # Optional but recommended: Open firewall ports for features like Remote Play
+  #     remotePlay.openFirewall = true;
+  #     dedicatedServer.openFirewall = true;
+
+  #     extraCompatPackages = with pkgs; [
+  #       proton-ge-bin # A popular community-built version with extra fixes
+  #       # You can add other Proton versions here if needed
+  #     ];
+  #   };
+
   services.blueman.enable = true;
   virtualisation.docker.enable = true;
+  virtualisation.docker.package = pkgs.docker_29;
 
   # Just for a dumb project
   programs.wireshark.enable = true;
@@ -40,6 +52,7 @@ in {
 
     home-manager
     wl-clipboard
+    wl-mirror
     pulseaudio
     slurp
     grim
@@ -49,7 +62,7 @@ in {
 
     feh
     evince
-    du-dust
+    dust
     trashy
     bat
     eza
@@ -60,6 +73,7 @@ in {
     pinentry-curses
     btop
     lazygit
+    nix-tree
 
     nethogs
     mpv
@@ -73,7 +87,7 @@ in {
 
     traceroute
     dig
-    tor-browser-bundle-bin
+    tor-browser
     openvpn
 
     python3
@@ -90,20 +104,22 @@ in {
     # vscodium.fhs
 
     syncthing
-    bitwarden
+    bitwarden-desktop
     xfce.thunar
     chromium
     # for netflix and language reactor :(
     google-chrome
     libreoffice-qt
-    obs-studio
-    logseq
+    # obs-studio
+    # logseq
+    typst
 
     xournalpp
     adwaita-icon-theme
 
     jetbrains.pycharm-professional
     jetbrains.webstorm
+    jetbrains.goland
 
     krita
     unstable.ollama
