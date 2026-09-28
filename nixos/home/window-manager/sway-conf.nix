@@ -26,7 +26,8 @@ in {
     };
   };
 
-  environment.systemPackages = with pkgs; [swaybg];
+  environment.systemPackages = with pkgs; [swaybg brightnessctl];
+
   home-manager.users.f4g4 = {
     wayland.windowManager.sway = {
       enable = true;
@@ -40,22 +41,17 @@ in {
 
       '';
 
-      #exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-
       config = rec {
         modifier = "Mod4";
         terminal = "foot";
-        startup = [
-        ];
+        startup = [];
 
         bars = [
           {
             command = "${waybar}/bin/waybar";
           }
         ];
-      };
 
-      config = {
         window = {
           hideEdgeBorders = "smart";
           border = 2;
@@ -127,43 +123,21 @@ in {
         };
 
         keybindings = mkOptionDefault {
-          # # rofi: menu
-          # "${modifier}+d" = "exec ${rofi}/bin/rofi -show drun";
-          # # rofi: clipboard manager
-          # "${modifier}+c" = "exec ${cliphist}/bin/cliphist list | ${rofi}/bin/rofi -dmenu | ${cliphist}/bin/cliphist decode | ${wl-clipboard}/bin/wl-copy ";
-          # # rofi: bluetooth
-          # "${modifier}+y" = "exec ${rofi-bluetooth}/bin/rofi-bluetooth";
-          # # rofi: password store
           "${modifier}+e" = "exec ${firefox}/bin/firefox";
           "${modifier}+n" = "exec thunar";
           "${modifier}+o" = "exec ${obsidian}/bin/obsidian";
           "${modifier}+w" = "kill";
           "${modifier}+semicolon" = "exec 'swaylock -e -f -i ~/Pictures/angry-misato.png; systemctl suspend'";
           "${modifier}+space" = "exec wofi -S run";
-          "${modifier}+m" = "exec ${light}/bin/light -S 1";
-          "${modifier}+comma" = "exec ${light}/bin/light -S 80";
-          "${modifier}+b" = "exec ${light}/bin/light -s sysfs/leds/tpacpi::kbd_backlight -S 50";
 
-          # "${modifier}+space" = "exec thunar"
-          # # pick color
-          # "${modifier}+n" = "exec ${wl-color-picker}/bin/wl-color-picker clipboard";
-          # # mirror screen
-          # "${modifier}+o" = "exec ${wl-mirror}/bin/wl-present mirror";
-
-          # "${modifier}+Ctrl+${left}" = "move workspace to output left";
-          # "${modifier}+Ctrl+${down}" = "move workspace to output down";
-          # "${modifier}+Ctrl+${up}" = "move workspace to output up";
-          # "${modifier}+Ctrl+${right}" = "move workspace to output right";
+          "${modifier}+m" = "exec ${brightnessctl}/bin/brightnessctl set 1%";
+          "${modifier}+comma" = "exec ${brightnessctl}/bin/brightnessctl set 80%";
+          "${modifier}+b" = "exec ${brightnessctl}/bin/brightnessctl --device=tpacpi::kbd_backlight set 50%";
 
           "${modifier}+Shift+0" = "move container to workspace number 10";
           "${modifier}+0" = "workspace number 10";
           "${modifier}+Shift+1" = "move container to workspace number 1";
           "${modifier}+1" = "workspace number 1";
-
-          # "${modifier}+Shift+${left}" = "move left";
-          # "${modifier}+Shift+${down}" = "move down";
-          # "${modifier}+Shift+${up}" = "move up";
-          # "${modifier}+Shift+${right}" = "move right";
 
           "Print" = ''exec grim -g "$(slurp -d)" - | wl-copy -t image/png'';
 
@@ -178,8 +152,8 @@ in {
           "XF86AudioMute" = "exec pactl set-sink-mute 0 toggle";
 
           # brightness
-          "XF86MonBrightnessUp" = "exec ${light}/bin/light -A 5";
-          "XF86MonBrightnessDown" = "exec ${light}/bin/light -U 5";
+          "XF86MonBrightnessUp" = "exec ${brightnessctl}/bin/brightnessctl set 5%+";
+          "XF86MonBrightnessDown" = "exec ${brightnessctl}/bin/brightnessctl set 5%-";
         };
       };
     };

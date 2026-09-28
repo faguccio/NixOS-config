@@ -25,7 +25,8 @@
     echo "NixOS Rebuilding..."
 
     # Rebuild, output simplified errors, log trackebacks
-    sudo nixos-rebuild switch &>nixos-switch.log || { grep --color error nixos-switch.log; exit 1; }
+
+    sudo nixos-rebuild switch &>nixos-switch.log || { strings nixos-switch.log | grep -i error; exit 1; }
 
     current=$(nixos-rebuild list-generations | awk '$NF == "True" {
         print "gen " $1 " (" $2 " " $3 ")"; exit

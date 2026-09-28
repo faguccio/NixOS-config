@@ -93,8 +93,6 @@
     [[ "$(tty)" == /dev/tty1 ]] && sway
   '';
 
-  programs.light.enable = true;
-
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; #
   services.blueman.enable = true;

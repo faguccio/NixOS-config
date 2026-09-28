@@ -68,7 +68,6 @@ in {
     eza
     appimage-run
     alejandra
-    neofetch
     htop
     pinentry-curses
     btop
@@ -117,9 +116,8 @@ in {
     xournalpp
     adwaita-icon-theme
 
-    jetbrains.pycharm-professional
+    jetbrains.pycharm
     jetbrains.webstorm
-    jetbrains.goland
 
     krita
     unstable.ollama
