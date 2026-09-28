@@ -73,6 +73,7 @@ in {
     btop
     lazygit
     nix-tree
+    dut
 
     nethogs
     mpv
