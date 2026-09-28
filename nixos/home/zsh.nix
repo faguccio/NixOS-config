@@ -4,10 +4,27 @@
   lib,
   ...
 }: {
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
-
+  programs.fish.enable = true;
+  users.defaultUserShell = pkgs.fish;
   environment.variables.EDITOR = "vim";
+
+  home-manager.users.f4g4 = {
+    programs.fish = {
+      enable = true;
+
+      shellAliases = {
+        ll = "eza -l";
+        ls = "eza";
+        sus = "systemctl suspend";
+        gis = "git status";
+      };
+    };
+
+    # Home Manager's direnv module automatically integrates with fish.
+    programs.direnv.enable = true;
+  };
+
+  programs.zsh.enable = true;
 
   home-manager.users.f4g4 = {
     programs.zsh = {

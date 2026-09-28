@@ -59,6 +59,7 @@ in {
     gtk3
     swaylock
     xdg-utils
+    toybox
 
     feh
     evince
