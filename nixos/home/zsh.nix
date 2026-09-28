@@ -35,6 +35,8 @@
         fi
 
         eval "$(direnv hook zsh)"
+
+        unfunction dut
       '';
       dotDir = ".config/zsh";
       prezto = {
